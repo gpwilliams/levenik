@@ -1,0 +1,9 @@
+"orthography_condition" "language_variety" "picture_condition" "order_condition" "speaker_condition" "count"
+"1" "opaque" "dialect" "picture" "RW" "female" 19
+"2" "opaque" "dialect" "picture" "RW" "male" 20
+"3" "opaque" "dialect" "picture" "WR" "female" 20
+"4" "opaque" "dialect" "picture" "WR" "male" 20
+"5" "opaque" "standard" "picture" "RW" "female" 19
+"6" "opaque" "standard" "picture" "RW" "male" 20
+"7" "opaque" "standard" "picture" "WR" "female" 20
+"8" "opaque" "standard" "picture" "WR" "male" 20

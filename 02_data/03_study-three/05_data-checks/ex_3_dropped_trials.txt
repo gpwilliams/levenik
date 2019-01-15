@@ -1,0 +1,5 @@
+"participant"	"total_trials_from_max"
+"1"	125	202
+"2"	144	181
+"3"	162	203
+"4"	191	202

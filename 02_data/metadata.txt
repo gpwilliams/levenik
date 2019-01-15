@@ -1,0 +1,89 @@
+Raw Data Files
+=======================================================
+PUT EXPLANATIONS HERE
+
+reading_coding
+reading_task
+sessions
+session_languages
+writing_task
+
+Cleaned Data Files
+=======================================================
+PUT EXPLANATIONS HERE
+
+ex1_2_cleaned
+ex1_2_filtered
+ex1_2_filtered_subsetted
+
+All contain demo.data and rw.data files
+
+File Headings
+=======================================================
+
+All file headings are based on ex1_2_filtered
+and ex1_2_filtered_subsetted 
+(which share identical headings)
+
+demo.data
+---------
+
+PUT EXPLANATIONS (AND DATA TYPE) TO THE SIDE OF EACH HEADING
+
+participant_number
+language_variety
+orthography_condition
+picture_condition
+order_condition
+speaker_condition
+age
+gender
+language_spoken
+language_proficiency_rating
+fun_rating
+noise_rating
+start_timestamp
+end_timestamp
+total_time
+
+rw.data
+-------
+
+PUT EXPLANATIONS (AND DATA TYPE) TO THE SIDE OF EACH HEADING 
+
+trial_id
+participant_number
+session_trial_id
+section_trial_id
+task_trial_id
+language_variety
+orthography_condition
+picture_condition
+order_condition
+speaker_condition
+task
+block
+picture_id
+word_id
+test_words
+dialect_words
+target_length
+exposure_count
+target
+primary_coder_response
+primary_coder_response_length
+primary_max_word_length
+primary_coder_correct
+primary_coder_nLED
+secondary_coder_response
+secondary_coder_response_length
+secondary_max_word_length
+secondary_coder_correct
+secondary_coder_nLED
+lenient_max_word_length
+lenient_correct
+lenient_nLED
+stringent_max_word_length
+stringent_correct
+stringent_nLED
+running_time

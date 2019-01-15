@@ -1,0 +1,22 @@
+Notes
+-----
+
+Potentially remove these participants:
+
+57: Doesn't take it seriously; and puts on accent throughout while naming objects in English
+99: Names most objects in English or some weird version of English (e.g. glass = glasle)
+131: Most responses as "can't/don't remember".
+176: recordings of some words heard on test phase -- trial 90
+241: early trials (~ 30) skipped entirely with some later trials (10-15 poor but usable) skipping in parts.
+	Technical error, should probably remove.
+249: Very difficult to hear every trial. Can't reliably transcribe.
+256: Someone speaking in background (4 answers before the main speaker).
+260: Says previous trial for each answer, definitely remove.
+
+--------------------------------------------------------------------------------
+
+Phonemes
+
+Vowels: 		a, E, i, O, u
+Consonants: 		m, n, s, k, b, d, f, l
+Dialect consonant: 	x
