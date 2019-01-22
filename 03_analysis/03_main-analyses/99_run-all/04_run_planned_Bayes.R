@@ -14,4 +14,3 @@ source_files(planned_Bayes_source_files)
 
 # save planned Bayesian tests
 saveRDS(planned_comparisons_Bayes, file = planned_Bayes_output_path)
-saveRDS(planned_comparisons_Bayes_agg, file = planned_Bayes_agg_output_path)

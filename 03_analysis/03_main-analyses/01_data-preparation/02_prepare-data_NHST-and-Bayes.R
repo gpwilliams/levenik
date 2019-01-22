@@ -3,7 +3,7 @@
 # Centre variables properly and generate polynomials for training for fitting
 # in lme4 with crossed random effects of subjects/items.
 
-# Main Models ----
+# Make New Variables ----
 
 # convert block to numeric for calculating orthogonal polynomials of block
 # make participant number and target a factor for lme4 and Bayes factor
@@ -19,15 +19,22 @@ data <- data %>%
 
 # Split data into training and testing, keep only required orthography
 # reset levels of orthography
+# make scaled DV for use in Bayesian models (easier to set priors this way)
 # remove datetimes (stops coercion warnings when fitting models)
 training <- data %>%
   filter(orthography_condition == orthography & block != "TEST") %>%
-  mutate(orthography_condition = factor(orthography_condition)) %>%
+  mutate(
+    orthography_condition = factor(orthography_condition),
+    asin_scaled = as.numeric(scale(asin))
+  ) %>%
   select(-c(submission_time, running_time))
 
 testing <- data %>%
   filter(orthography_condition == orthography & block == "TEST") %>%
-  mutate(orthography_condition = factor(orthography_condition)) %>%
+  mutate(
+    orthography_condition = factor(orthography_condition),
+    asin_scaled = as.numeric(scale(asin))
+  ) %>%
   select(-c(submission_time, running_time))
 
 # reset levels to remove dropped levels for block/dialect words
@@ -44,6 +51,8 @@ if (experiment == 0 | experiment == 3) {
   polynomials <- poly(1:max(training$block_num), 1)
   training$ot1 <- polynomials[training$block_num, 1]
 }
+
+# Centre Variables ----
 
 # establish list of variables to be centred (and which level to be positive)
 training_list <-
@@ -108,6 +117,8 @@ testing <- testing %>%
       )) %>%
   mutate(dialect_words_c = centre_var(., "dialect_words", "shifted_word")) %>%
   replace_na(list(dialect_words_c = 0, dialect_words = "can_shift_word"))
+
+# Set Contrasts ----
 
 # sum and helmert code appropriate factors
 

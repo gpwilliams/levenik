@@ -149,19 +149,6 @@ planned_Bayes_output_path <- here(
   "planned-comparisons_Bayes.RData"
 )
 
-planned_Bayes_agg_output_path <- here(
-  "03_analysis",
-  "03_main-analyses",
-  "04_output",
-  paste0(
-    "0",
-    experiment + 1,
-    "_experiment-",
-    experiment
-  ),
-  "planned-comparisons_Bayes_agg.RData"
-)
-
 session_info_output_path <- here(
   "03_analysis",
   "03_main-analyses",

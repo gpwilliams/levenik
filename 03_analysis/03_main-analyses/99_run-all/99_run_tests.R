@@ -17,9 +17,12 @@ libraries <- c(
   "lmerTest",
   "rlang", 
   "lme4", 
-  "BayesFactor",
+  "brms",
   "emmeans"
 )
+
+# Uses dev version of stringr at the time of writing. Install with:
+# devtools::install_github("tidyverse/stringr")
 
 lapply(libraries, library, character.only = TRUE)
 
@@ -54,7 +57,7 @@ source(options_path)
 # Define Tests and Experiments to Run ----
 
 # define experiments to analyse
-experiments <- 0:3 # change to one number to run for one experiment
+experiments <- 0:3 # change to one number to run one experiment
 
 # define tests to run
 # to_run <- "all" 
