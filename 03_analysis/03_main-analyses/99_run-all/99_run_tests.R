@@ -127,3 +127,68 @@ saveRDS(
   sessionInfo(),
   file = session_info_output_path
 )
+
+# Save results with a reduced filesize ----
+
+# gets brms summaries (instead of keeping all draws)
+experiments <- 0:3
+results <- list()
+
+for (i in seq_along(experiments)) {
+  
+  # get experiment ID for subsetting/testing
+  experiment <- experiments[i]
+  
+  # define path to specific experiment
+  experiments_path <- here(
+    "03_analysis", 
+    "03_main-analyses", 
+    "04_output",
+    paste0(
+      "0",
+      experiment + 1,
+      "_experiment-",
+      experiment
+    )
+  )
+  
+  message(paste("Compressing data for experiment", experiment))
+  
+  # list file names and paths
+  model_file_names <- list.files(experiments_path, pattern = "[.]RData")
+  
+  model_paths <- here(
+    "03_analysis", 
+    "03_main-analyses", 
+    "04_output",
+    paste0("0", experiment + 1, "_experiment-", experiment),
+    model_file_names
+  )
+  
+  # model file renames (replaces minus -- illegal in R -- with underscore)
+  # and removes the .RData ending
+  model_names <- model_file_names %>% 
+    str_sub(end = -7) %>%
+    str_replace_all("-", "_")
+  
+  # load models and assign to varying list name with appropriate subnames
+  results[[i]] <- purrr::map(model_paths, readRDS) %>%
+    purrr::set_names(model_names) # remove file type
+  
+  # squash Bayesian models down to a summary (removing draws, etc)
+  results[[i]]$planned_comparisons_Bayes <- 
+    results[[i]]$planned_comparisons_Bayes %>% 
+      modify_at(
+        c("brm_train", "brm_test", "brm_test_novel"),
+        summary
+      )
+}
+
+# set names for each experiment
+results <- results %>% purrr::set_names(paste("experiment", 0:3, sep = "_"))
+
+# write to file
+saveRDS(
+  results,
+  file = compressed_results_path
+)

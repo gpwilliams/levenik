@@ -61,13 +61,9 @@ if (main_planned_NHST_run == TRUE) {
   )
   source(tests_main_planned_NHST_path)
 }
+
 # run post-hoc comparisons
 source_files(post_hoc_source_files)
-
-# run additional analyses for experiments 1 and 2 only
-if (experiment > 0) {
-  source_files(post_hoc_ex_1_to_3_source_files)
-}
 
 # save post-hocs
 saveRDS(post_hoc_comparisons, file = post_hoc_output_path)

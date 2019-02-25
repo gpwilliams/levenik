@@ -3,6 +3,5 @@
 
 # post-hoc comparisons ----
 post_hoc_comparisons <- list(
-  train_bpl_pair = train_bpl_pair,
-  test_pn_pair = test_pn_pair
+  train_bpl_pair = train_bpl_pair
 )

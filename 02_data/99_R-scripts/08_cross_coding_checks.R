@@ -35,11 +35,11 @@ coded_data <- subset(data, (task == "R"))
 
 # find people and items left to code by both/either coders
 primary_coder_to_code <- coded_data %>%
-  filter(is.na(primary_coder_nLED)) %>%
+  filter(is.na(primary_coder_response)) %>%
   mutate(coder = "Glenn")
 
 secondary_coder_to_code <- coded_data %>%
-  filter(is.na(secondary_coder_nLED)) %>%
+  filter(is.na(primary_coder_response)) %>%
   mutate(coder = "Vera")
 
 
@@ -94,30 +94,33 @@ completed_multiple_coded <- participant_coder_ID %>%
 # save all coding information (used to determine any left during coding)
 write.csv(
   participant_coder_ID, 
-  paste0("../", 
-         folder, 
-         "/05_data-checks/",
-         experiments,
-         "_participant_coder_ID_check.csv"
+  paste0(
+    "../", 
+    folder, 
+    "/05_data-checks/",
+    experiments,
+    "_participant_coder_ID_check.csv"
   )
 )
 
 write.csv(
   to_code_ids, 
-  paste0("../", 
-         folder, 
-         "/05_data-checks/",
-         experiments,
-         "_subjects_to_code.csv"
+  paste0(
+    "../", 
+    folder, 
+    "/05_data-checks/",
+    experiments,
+    "_subjects_to_code.csv"
   )
 )
 
 write.csv(
   to_code, 
-  paste0("../", 
-         folder, 
-         "/05_data-checks/",
-         experiments,
-         "_subjects_and_items_to_code.csv"
+  paste0(
+    "../", 
+    folder, 
+    "/05_data-checks/",
+    experiments,
+    "_subjects_and_items_to_code.csv"
   )
 )

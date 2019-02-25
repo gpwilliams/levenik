@@ -72,7 +72,7 @@ dropped_participants <- read.csv(
     experiments,
     "_dropped_participants_and_reasons.csv"
   ),
-  stringsAsFactors = F
+  stringsAsFactors = FALSE
 )
 
 # filter to reading only (for direct comparison between ex0 and ex1, 2, and 3)
@@ -171,14 +171,15 @@ for (i in seq_along(levels(data$orthography_condition))) {
         "\n Data based on Reading Performance Only."
       )
   } else {
-    message("something went wrong during plotting - see file 07.")
+    stop("something went wrong during plotting - see file 07.")
   }
 
   # calculate number of pages to print
   n_cols <- 3
   n_rows <- 5
-  n_pages <- ceiling(length(unique(sub_data$participant_number)) / 
-                       (n_cols * n_rows))
+  n_pages <- ceiling(
+    length(unique(sub_data$participant_number))/(n_cols * n_rows)
+  )
 
   # define pdf name
   print(paste("making plots for", file_heading))
@@ -196,7 +197,10 @@ for (i in seq_along(levels(data$orthography_condition))) {
   for (j in seq_len(n_pages)) {
     print(
       add_custom_plot_elements(
-        ggplot(sub_data, aes(x = section_trial_id, y = target_distance)) +
+        ggplot(
+          sub_data %>% filter(!is.na(target_distance)), 
+          aes(x = section_trial_id, y = target_distance)
+        ) +
           geom_bar(stat = "identity", position = "dodge") +
           facet_wrap_paginate(
             ~participant_number,
@@ -212,8 +216,8 @@ for (i in seq_along(levels(data$orthography_condition))) {
               "\n participant's input on each trial split by participant."
             )
           ),
-        max(sub_data$target_distance, na.rm = T) - 0.2,
-        max(sub_data$target_distance, na.rm = T) - 0.6
+        max(sub_data$target_distance, na.rm = TRUE) - 0.2,
+        max(sub_data$target_distance, na.rm = TRUE) - 0.6
       )
     )
   }
@@ -264,8 +268,9 @@ for (i in seq_along(orthography_levels)) {
   # calculate number of pages to print
   n_cols <- 3
   n_rows <- 5
-  n_pages <- ceiling(length(unique(sub_data$participant_number)) / 
-                       (n_cols * n_rows))
+  n_pages <- ceiling(
+    length(unique(sub_data$participant_number))/(n_cols * n_rows)
+    )
   
   pdf(
     paste0(
@@ -281,7 +286,10 @@ for (i in seq_along(orthography_levels)) {
   for (j in seq_len(n_pages)) {
     print(
       add_custom_plot_elements(
-        ggplot(sub_data, aes(x = !!trial_id, y = lenient_nLED)) +
+        ggplot(
+          sub_data %>% filter(!is.na(lenient_nLED)), 
+          aes(x = !!trial_id, y = lenient_nLED)
+          ) +
           geom_line() +
           geom_point() +
           facet_wrap_paginate(

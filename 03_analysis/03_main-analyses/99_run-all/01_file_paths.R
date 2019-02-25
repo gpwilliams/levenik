@@ -66,13 +66,6 @@ post_hoc_source_files <- here(
   )
 ) 
 
-post_hoc_ex_1_to_3_source_files <- here(
-  "03_analysis",
-  "03_main-analyses",
-  "03_post-hoc-analyses", 
-  "05_experiments-1-to-3"
-)
-
 planned_Bayes_source_files <- here(
   "03_analysis",
   "03_main-analyses",
@@ -179,4 +172,14 @@ tests_planned_Bayes_path <- here(
   "03_main-analyses",
   "99_run-all",
   "04_run_planned_Bayes.R"
+)
+
+# Paths for compressed results ----
+
+compressed_results_path <- here(
+  "03_analysis",
+  "03_main-analyses",
+  "04_output",
+  "05_all-results_compressed",
+  "all-results_compressed.RData"
 )

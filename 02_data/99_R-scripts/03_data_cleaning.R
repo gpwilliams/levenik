@@ -130,7 +130,10 @@ paste("Total number of duplicates:", nrow(duplicates))
 # for testing words, which should be different to training words
 # dialect words has: shifted, not shifted, and testing words (can_shift)
 # so training words (shifted/not) maintain counts in training and testing
-
+# note counts include exposures before training and between training tasks
+# thus for training words it starts at 1 and increments by 1 for each block
+# and also by 1 for every time it occurs in a training block
+# testing words start at 0 and only increment by 1 on each exposure in testing
 data <- data %>%
   group_by(participant_number, block, task, dialect_words) %>%
   mutate(exposure_count = Mode(exposure_count))

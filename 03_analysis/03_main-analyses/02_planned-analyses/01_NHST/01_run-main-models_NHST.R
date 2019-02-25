@@ -100,7 +100,7 @@ if (experiment == 0) {
   test_max_model <- as.formula(paste(
     dv_transformed,
     "~ 
-    picture_condition*language_variety/dialect_words +
+    picture_condition * language_variety/dialect_words +
     (1 + picture_condition_c * language_variety_c | target) +
     (1 + (dialect_words_c + test_words_c) | participant_number)"
   ))
@@ -109,7 +109,7 @@ if (experiment == 0) {
   test_max_model <- as.formula(paste(
     dv_transformed,
     "~ 
-    task*picture_condition*language_variety/dialect_words +
+    task * picture_condition * language_variety/dialect_words +
     (1 + language_variety_c * picture_condition_c * task_c | target) +
     (1 + task_c * (dialect_words_c + test_words_c) | participant_number)"
   ))
@@ -118,7 +118,7 @@ if (experiment == 0) {
   test_max_model <- as.formula(paste(
     dv_transformed,
     "~ 
-    task*picture_condition*language_variety/dialect_words +
+    task * picture_condition * language_variety/dialect_words +
     (1 + language_variety_c * picture_condition_c * task_c || target) +
     (1 + task_c * (dialect_words_c + test_words_c) || participant_number)"
   ))
@@ -127,7 +127,7 @@ if (experiment == 0) {
   test_max_model <- as.formula(paste(
     dv_transformed,
     "~ 
-    task*language_variety/dialect_words +
+    task * language_variety/dialect_words +
     (1 + language_variety_c * task_c | target) +
     (1 + task_c * (dialect_words_c + test_words_c) | participant_number)"
   ))

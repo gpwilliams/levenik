@@ -4,11 +4,5 @@
 # post-hoc comparisons ----
 
 post_hoc_comparisons <- list(
-  lme_train_ml = lme_train_ml,
-  train_tl = train_tl,
-  train_tl_model_comparison = train_tl_model_comparison,
-  train_tl_pair = train_tl_pair,
-  train_wbl_pair = train_wbl_pair,
-  test_tw_pair = test_tw_pair,
-  test_tn_pair = test_tn_pair
+  none = NA
 )

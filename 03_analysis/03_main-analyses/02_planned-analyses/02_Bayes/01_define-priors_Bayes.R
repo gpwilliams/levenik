@@ -36,7 +36,8 @@ if (experiment == 0) {
     "taskW:picture_conditionpicture:language_varietystandard:dialect_words1"
   )
 } else if (experiment == 3) {
-  informative_prior_terms_training <- c("task1",
+  informative_prior_terms_training <- c(
+    "task1",
     "language_variety1",
     "task1:language_variety1",
     "taskR:language_varietydialect:dialect_words1", 

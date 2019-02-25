@@ -32,8 +32,8 @@ for (i in seq_along(all_experiments)) {
   experiments <- all_experiments[i]
   
   folder <- case_when(
-    all_experiments[i] == "ex_0" ~ "01_study-zero"
-    all_experiments[i] == "ex_1_2" ~ "02_study-one-and-two"
+    all_experiments[i] == "ex_0" ~ "01_study-zero",
+    all_experiments[i] == "ex_1_2" ~ "02_study-one-and-two",
     all_experiments[i] == "ex_3" ~ "03_study-three"
   )
 

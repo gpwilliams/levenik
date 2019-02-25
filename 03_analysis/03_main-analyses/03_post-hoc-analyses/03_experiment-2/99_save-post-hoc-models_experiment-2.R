@@ -8,10 +8,5 @@ post_hoc_comparisons <- list(
   lme_test_ml = lme_test_ml,
   test_pt_reduced = test_pt_reduced,
   test_pt_model_comparison = test_pt_model_comparison,
-  test_pt_pair = test_pt_pair,
-  test_tl_pair = test_tl_pair,
-  test_tn_reduced = test_tn_reduced,
-  test_tn_model_comparison = test_tn_model_comparison,
-  test_tn_pair = test_tn_pair,
-  test_ptn_pair = test_ptn_pair
+  test_pt_pair = test_pt_pair
 )

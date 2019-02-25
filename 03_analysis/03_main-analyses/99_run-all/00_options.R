@@ -4,7 +4,6 @@
 
 # - which dependent variables are used
 # - how degrees of freedom are calculated
-# - number of iterations used for model fitting
 
 # Test Options ----
 
@@ -30,9 +29,3 @@ dv_transformed <- "asin"
 # define transformed and scaled DV
 # WARNING: if you change this here, it must also change in all scripts 
 dv_transformed_scaled <- "asin_scaled"
-
-# establish random factors for all models in all Bayesian analyses
-random_factors_bf <- c("participant_number", "target")
-
-# define number of iterations for Bayesian tests
-iterations <- 5e5 # 500k

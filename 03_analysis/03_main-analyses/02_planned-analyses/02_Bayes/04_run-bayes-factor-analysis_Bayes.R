@@ -4,7 +4,6 @@
 # then cleans up the list (removing the appended b_ and excluding the prior)
 # before setting all hypotheses to a 
 # point null hypothesis (i.e. parameter of interest = 0)
-# After this, 
 
 # Training ----
 
