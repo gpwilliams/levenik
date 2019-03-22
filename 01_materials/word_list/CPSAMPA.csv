@@ -1,0 +1,43 @@
+item,pos_1,pos_2,pos_3,pos_4,pos_5,pos_6,eng_word,CPSAMPA,structure,eng_total_ND,spanish_total_ND,eng_neighbours,spanish_neighbours
+01,n,E,f,,,,nEf,n.E.f,CVC,9,0,Jeff; deaf; chef; ref; knife; neck; net; Ness; Neb;,0
+02,f,u,b,,,,fub,f.u.b,CVC,10,2,tube; Rube; boob; lube; fib; fab; food; fool; Phooey; Foo;,sub; pub; ;
+03,m,a,b,,,,mab,m.a.b,CVC,1,4,mob;,más; mal; mas; mar;
+04,m,i,f,,,,mif,m.i.f,CVC,16,6,Chief; thief; beef; leaf; reef; Muff; Morph; mean; meet; meat; meal; meek; Mead; me; Mae; mea;,mis; mío; mía; mil; mi; mí;
+05,n,a,l,,,,nal,n.a.l,CVC,9,6,Noel; nail; kneel; Neal; Nile; knoll; null; nil; Noll,tal; mal; sal; cal; al; anal
+06,l,O,m,,,,lOm,l.O.m,CVC,12,0,lame; lamb; limb; Lam; lime; loom; loss; laws; lawn; log; laude; law,0
+07,d,a,f,,,,daf,d.a.f,CVC,3,5,deaf; Duff; diff,dar; dan; das; dad; da
+08,s,n,i,d,,,snid,s.n.i.d,CCVC,10,0,speed; Steed; Swede; snowed; snide; sneak; sneeze; need; seed; sneezed,0
+09,s,n,O,f,,,snOf,s.n.O.f,CCVC,3,0,scoff; sniff; snuff,0
+10,b,l,i,m,,,blim,b.l.i.m,CCVC,8,0,gleam; blame; bloom; bleed; bleep; bleach; bleak; beam,0
+11,b,l,a,f,,,blaf,b.l.a.f,CCVC,1,0,bluff,0
+12,s,k,u,b,,,skub,s.k.u.b,CCVC,4,1,scab; school; scoop; scoot,sub
+13,f,l,O,b,,,flOb,f.l.O.b,CCVC,4,0,floss; flaws; flawed; flaw,0
+14,k,l,E,b,,,klEb,k.l.E.b,CCVC,2,1,club; Clem,club
+15,b,a,l,f,,,balf,b.a.l.f,CVCC,0,3,0,vale; bala; vals
+16,d,O,l,k,,,dOlk,d.O.l.k,CVCC,0,0,0,0
+17,m,O,l,s,,,mOls,m.O.l.s,CVCC,3,0,moths; mauled; Moss,0
+18,f,O,n,s,,,fOns,f.O.n.s,CVCC,5,1,fence; Faux; fauna; Fawn; faun,fans
+19,s,u,l,d,,,suld,s.u.l.d,CVCC,9,0,fooled; ruled; cooled; sold; sealed; sailed; soiled; sued; schooled,0
+20,n,i,f,s,,,nifs,n.i.f.s,CVCC,4,0,Chiefs; beefs; reefs; niece,0
+21,n,E,s,k,,,nEsk,n.E.s.k,CVCC,5,0,desk; nest; Nestle; neck; Ness,0
+22,n,O,f,l,E,,nOflE,n.O.f.l.E,CVCCV,0,0,0,0
+23,d,i,k,l,a,,dikla,d.i.k.l.a,CVCCV,0,1,0,dicta
+24,d,E,s,n,a,,dEsna,d.E.s.n.a,CVCCV,0,0,0,0
+25,d,a,s,m,u,,dasmu,d.a.s.m.u,CVCCV,0,0,0,0
+26,k,u,b,l,E,,kublE,k.u.b.l.E,CVCCV,0,0,0,0
+27,b,E,s,m,i,,bEsmi,b.E.s.m.i,CVCCV,0,0,0,0
+28,l,u,s,k,O,,luskO,l.u.s.k.O,CVCCV,0,0,0,0
+29,s,m,i,b,a,,smiba,s.m.i.b.a,CCVCV,0,0,0,0
+30,s,k,E,f,i,,skEfi,s.k.E.f.i,CCVCV,1,0,sketchy,0
+31,k,l,u,f,E,,klufE,k.l.u.f.E,CCVCV,0,0,0,0
+32,s,m,a,d,u,,smadu,s.m.a.d.u,CCVCV,0,0,0,0
+33,k,l,O,d,a,,klOda,k.l.O.d.a,CCVCV,1,0,clawed,0
+34,f,l,i,d,u,,flidu,f.l.i.d.u,CCVCV,0,0,0,0
+35,s,l,O,k,u,,slOku,s.l.O.k.u,CCVCV,0,0,0,0
+36,s,k,O,n,E,f,skOnEf,s.k.O.n.E.f,CCVCVC,0,0,0,0
+37,b,l,E,k,u,s,blEkus,b.l.E.k.u.s,CCVCVC,0,0,0,0
+38,s,n,i,b,O,l,snibOl,s.n.i.b.O.l,CCVCVC,1,0,snowball,0
+39,k,l,u,s,i,m,klusim,k.l.u.s.i.m,CCVCVC,0,0,0,0
+40,f,l,E,s,O,d,flEsOd,f.l.E.s.O.d,CCVCVC,0,0,0,0
+41,s,l,i,n,a,b,slinab,s.l.i.n.a.b,CCVCVC,0,0,0,0
+42,f,l,a,b,u,n,flabun,f.l.a.b.u.n,CCVCVC,0,0,0,0

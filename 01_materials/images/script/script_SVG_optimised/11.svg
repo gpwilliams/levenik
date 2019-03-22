@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg4136" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="256" width="256" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 256 256">
+ <defs id="defs4138">
+  <clipPath id="clipPath4932" clipPathUnits="userSpaceOnUse">
+   <rect id="rect4934" ry="0" height="94.111" width="209.35" y="145.89" x="44"/>
+  </clipPath>
+  <clipPath id="clipPath4938" clipPathUnits="userSpaceOnUse">
+   <path id="path4940" d="m114.45 144.38-0.4-56.62 79.26 40.24-9.31 43.48-56-4.45z" fill-rule="evenodd" fill="#00eb00"/>
+  </clipPath>
+  <clipPath id="clipPath4944" clipPathUnits="userSpaceOnUse">
+   <path id="path4946" d="m72 136.7v-55.006-9.694h-72l32.758 66.72z" fill-rule="evenodd" fill="#00eb00"/>
+  </clipPath>
+ </defs>
+ <g id="layer1">
+  <rect id="rect4684" height="28" width="45" y="100" x="71"/>
+  <g stroke-linejoin="round" stroke="#000" stroke-width="28" fill="none">
+   <circle id="path4155" clip-path="url(#clipPath4938)" cx="114" cy="156" r="42"/>
+   <circle id="path4155-0" clip-path="url(#clipPath4944)" cx="72" cy="72" r="42"/>
+   <circle id="path4153" clip-path="url(#clipPath4932)" cx="156" cy="240" r="70"/>
+  </g>
+  <rect id="rect4684-6" height="57" width="28" y="16" x="16"/>
+ </g>
+</svg>

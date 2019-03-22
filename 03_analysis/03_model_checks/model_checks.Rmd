@@ -1,0 +1,169 @@
+---
+title: "Experiments 0-3 Model Checks"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 5
+    toc_float: true
+    number_sections: false
+date: "`r format(Sys.time(), '%d %B, %Y')`"
+author: Glenn Williams, Nikolay Panayotov, & Vera Kempe
+---
+
+NOTE: We should get the RePsychLing package `devtools::install_github("dmbates/RePsychLing")` to explore which of our random effects can be culled in terms of the smallest amount of variance explained in cases of overdispersion.
+
+```{r setup, include = FALSE}
+# load all libraries
+libraries <- c(
+  "here",
+  "tidyverse",
+  "lme4",
+  "lmerTest",
+  "broom.mixed",
+  "knitr",
+  "RePsychLing" # devtools::install_github("dmbates/RePsychLing")
+)
+lapply(libraries, library, character.only = TRUE)
+
+# source(here("05_paper", "00_functions", "paper_functions.R"))
+source(here("03_analysis", "03_model_checks", "model_checking_functions.R"))
+```
+
+```{r preferences, include = FALSE}
+# Seed for random number generation
+set.seed(42)
+knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
+```
+
+```{r load_data, include = FALSE}
+# folder containing results from each experiment
+source(here("05_paper", "99_run_all", "load_data.R"))
+```
+
+# Introduction
+
+```{r subset-to-main-and-planned-analyses}
+# subset data to main and planned analyses only
+main_planned <- list()
+for(experiment in 0:3) {
+  
+  ex_index <- paste("experiment", experiment, sep = "_")
+
+  main_planned[[experiment + 1]] <- c(
+    results[[ex_index]]$main_models[c("lme_train", "lme_test")],
+    results[[ex_index]]$planned_comparisons_NHST[c("test_l_n")]
+  )
+}
+main_planned <- main_planned %>% 
+  purrr::set_names(paste("experiment", 0:3, sep = "_"))
+```
+
+# Checking Non-convergence
+
+This code is inelegant. It'd probably be best to rewrite this function so it's like `get_excessive_corrs`, allowing a simple map call.
+
+```{r non-convergence-test}
+# check convergence for all main and planned experiments
+mp_converge <- data.frame()
+for(experiment in 0:3) {
+  mp_converge <- bind_rows(
+    mp_converge,
+    map(
+      main_planned[[experiment + 1]],
+      check_nonconvergence
+      ) %>%
+      as.data.frame() %>%
+      gather(key = "model", value = "non_convergence") %>%
+      mutate(experiment = names(main_planned)[experiment + 1])
+    )
+}
+```
+
+```{r non-convergence-test-output}
+if(any(mp_converge$non_convergence == TRUE)) {
+  non_convergence_output <- mp_converge %>%
+    filter(non_convergence == TRUE) %>%
+    select(experiment, everything()) %>%
+    kable(caption = paste(
+      "Non-converging models. Random effects structures",
+      "for these models must be simplified."
+      )
+    )
+} else {
+  non_convergence_output <- "All main and planned models converge."
+}
+```
+
+`r non_convergence_output`
+
+# Checking for Perfect Correlations between Random Effects
+
+```{r get-excessive-corrs}
+excessive_corrs <- map(main_planned, ~ get_excessive_corrs(.x, corr_lim = 0.99))
+```
+
+```{r}
+if(sum(map_dbl(excessive_corrs, ~ nrow(.x))) == 0) {
+  excessive_corrs_output <- paste(
+    "We found no perfect correlations between random effects in all models,",
+    "suggesting that silent non-convergence did not occur in any models."
+  )
+} else {
+  excessive_corrs_output <- map(
+    excessive_corrs, ~ 
+      if("model" %in% colnames(.x)) {toString(unique(.x$model))}
+    ) %>% 
+    compact() %>% # remove NULL elements
+    bind_rows() %>%
+    gather(key = "experiment", value = "model") %>%
+    mutate(experiment = str_extract(experiment, "[0-9]")) %>%
+    kable(caption = paste(
+      "Models with excessive correlations. This indicates non-convergence,",
+      "and as such these models must have their random effects",
+      "structures simplified.")
+    )
+}
+```
+
+`r excessive_corrs_output`
+
+## Reducing Perfect Correlations
+
+Where appropriate, we intended to simplify the random effects structures by removing higher order terms and terms related to items effects (which often vary less than subject effects). However, one alternative is to use principal components analysis to decide which terms should be removed from our random effects structure in order to allow convergence without losing explanatory power of the model. This code is left to provide an option where all other pre-registered methods for simplifcation did not work. However, this was not necessary for the present set of experiments.
+
+```{r PCA-for-random-effects, eval = FALSE}
+# an example of how to run PCA on random effects structures.
+summary(rePCA(results$experiment_0$main_models$lme_test))
+```
+
+See Kliegl's guide on [simplifying (and obtaining parsimonious) mixed effects models](https://www.uni-potsdam.de/attlis2016/assets/Kliegl_AttLis2016.pdf) and further notes on using the [double bar syntax to fit zero-correlation random effects structures](https://rpubs.com/Reinhold/22193). Note that uncorrelating random effects does not work for factors, but only for numeric variables.
+
+# Check Normality of Residuals
+
+As can be seen in the below panel of plots, all of our main and planned analyses have normally distributed residuals.
+
+```{r plot-normality}
+# plot (and not ggplot) used as extracting residuals is easier in base R
+par(mfrow = c(3, 4))
+
+output_counter <- 1
+for(i in seq_along(names(main_planned))) {
+  for(ii in seq_along(names(main_planned[[i]]))) {
+    qqnorm(resid(main_planned[[i]][[ii]]),
+    main = paste0(
+      str_to_title(str_replace_all(names(main_planned)[[i]], "_", " ")),
+      ": ", 
+      names(main_planned[[i]])[[ii]]
+      )
+    )
+    output_counter <- output_counter + 1
+  }
+}
+```
+
+```{r save-normality-plots, include = FALSE}
+normal_plots <- recordPlot()
+png("normal_qq_plots.png", res = 72*3, width = 45, height = 45, units = "cm")
+normal_plots
+dev.off()
+```

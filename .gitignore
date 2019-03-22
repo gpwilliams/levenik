@@ -3,15 +3,16 @@
 .RData
 .Ruserdata
 
-01_materials/images/
+01_materials/images/norms/input/forsythe-et-al/all_data.csv
 
-03_analysis/01_power-analysis/
-03_analysis/02_cross-coding/
-03_analysis/03_main-analyses/04_output/*/
-03_analysis/03_main-analyses/99_run-all/999_TESTING.R
-03_analysis/03_main-analyses/notes/
+03_analysis/02_main-analyses/04_output/01_experiment-0/
+03_analysis/02_main-analyses/04_output/02_experiment-1/
+03_analysis/02_main-analyses/04_output/03_experiment-2/
+03_analysis/02_main-analyses/04_output/04_experiment-3/
+03_analysis/02_main-analyses/04_output/05_multiple-experiments/
 
-04_figures/
+03_analysis/02_main-analyses/notes/
+
 05_paper/
 
 /TODO.txt

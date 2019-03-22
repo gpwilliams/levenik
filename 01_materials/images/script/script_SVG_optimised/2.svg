@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg id="svg4136" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns="http://www.w3.org/2000/svg" height="256" width="256" version="1.1" xmlns:cc="http://creativecommons.org/ns#" xmlns:dc="http://purl.org/dc/elements/1.1/" viewBox="0 0 256 256">
+ <g id="layer1">
+  <g>
+   <rect id="rect4747" height="113" width="28" y="127" x="16"/>
+   <rect id="rect4156" height="28" width="113" y="212" x="100"/>
+   <rect id="rect4747-1" height="113" width="28" y="127" x="212"/>
+  </g>
+  <path id="path4172" stroke-linejoin="round" d="m30 128a98 98 0 0 1 98 -98 98 98 0 0 1 98 98" stroke="#000" stroke-width="28" fill="none"/>
+  <path id="path4195" stroke-linejoin="round" d="m114 156a28 28 0 0 1 28 -28 28 28 0 0 1 28 28" stroke="#000" stroke-width="28" fill="none"/>
+  <rect id="rect4747-1-8" height="85" width="28" y="155" x="100"/>
+  <rect id="rect4747-1-8-5" height="29" width="28" y="155" x="156"/>
+ </g>
+</svg>
