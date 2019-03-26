@@ -1,0 +1,33 @@
+## Appendix D. List of words and their variants. {#appendix-c}
+
+```{r, results = "asis", warning = FALSE}
+word_list_data <- readr::read_csv(
+  here::here(
+    "01_materials", 
+    "word_list", 
+    "input", 
+    "spelling_and_pronunciations.csv"
+  )
+) %>%
+  select(transparent_spelling:contrastive_pronunciation) %>%
+  replace_na(list(contrastive_pronunciation = ""))
+
+kable(
+  word_list_data,
+  format = "latex",
+  booktabs = TRUE, 
+  caption = "Word list used in all experiments. Experiment 1, 2b, and 3 use the opaque pronunciations, while Experiment 2a uses the transparent pronunciations.", 
+  col.names = c("Transaprent", "Opaque", "Non-Contrastive", "Contrastive"),
+  longtable = multipage_table,
+  escape = FALSE,
+  linesep = "" # avoids spacing every 5 rows
+  ) %>%
+kable_styling(
+  latex_options = c("hold_position", "repeat_header"), 
+  full_width = FALSE,
+  font_size = table_font_size
+) %>%
+add_header_above(
+  c("Spelling" = 2, "Pronunciation" = 2)
+)
+```

@@ -1,0 +1,57 @@
+---
+title: "Supplemental Material to `How Does Dialect Exposure Affect Learning to Read and Spell? An Artificial Orthography Study'"
+subtitle: "Images used from the Rossion and Pourtois (2004) picture set and their related norming results"
+author: "Williams, G. P., Panayotov, N., & Kempe, V."
+header-includes:
+   - \usepackage{tipa}
+output:
+    pdf_document:
+      keep_tex: FALSE
+---
+
+```{r options, include = FALSE}
+options(scipen = 999, digits = 2)
+```
+
+
+```{r setup, include = FALSE, message = FALSE, warning = FALSE}
+# tipa package used for creating IPA characters
+image_norms <- readr::read_csv(all_ratings_output_path)
+
+compression_scores_forsythe <- readr::read_csv(f_path) %>%
+  summarise_at(
+    vars(familiarity:JPEG),
+    list(mean = mean, sd = sd)
+  )
+
+compression_scores_williams <- readr::read_csv(w_path) %>%
+  summarise_at(
+    vars(PNG:GIF),
+    list(mean = mean, sd = sd)
+  )
+```
+
+We selected a subset of the items from the freely available colorised Vanderwart image set (Rossion & Pourtois, 2004). These are as follows:
+
+- Body part: Finger, foot, eye, hand, nose, arm, ear.
+
+- Furniture and kitchen utensils: Chair, glass, bed, fork, spoon, pot, desk.
+
+- Household objects, tools, and instruments: Television, toothbrush, book, pen, refrigerator, watch, pencil.
+
+- Food and clothing: Pants, socks, shirt, sweater, apple, tomato, potato.
+
+- Buildings, building features, and vehicles: Door, house, window, car, doorknob, truck, bicycle.
+Animals and plants: Tree, dog, cat, flower, rabbit, duck, chicken.
+
+We calculated means (and standard deviations) for the familiarity, complexity, and imagery measures for our subset of pictures from those provided for the entire picture set in the appendices of Rossion and Pourtois (2004). 
+
+Across our all items, our subset had a mean familiarity score (i.e. how much experience participants have with an object: 1 being very unfamiliar, 5 being very familiar) of `r image_norms %>% filter(rating == "familiarity") %>% pull(mean)` (`r image_norms %>% filter(rating == "familiarity") %>% pull(sd)`), mean complexity score (i.e. the amount of detail or intricacy in the image of the object: 1 being very simple, 5 being very complex) of `r image_norms %>% filter(rating == "complexity") %>% pull(mean)` (`r image_norms %>% filter(rating == "complexity") %>% pull(sd)`), and mean imagery score (i.e. the match between mental representations of the most frequent object name and its image: 1 being low overlap 5 being high overlap) of `r image_norms %>% filter(rating == "imagery") %>% pull(mean)` (`r image_norms %>% filter(rating == "imagery") %>% pull(sd)`).
+
+Additionally, we provide ratings of familiarity (on a 1-5 scale as above), how often people have encountered each object in everyday life (1 being not very often, 5 being very often) and complexity (on a scale of 1-5 as above) from individual participant ratings using the data from Forsythe, Street, and Helmy (2017) who used improved methods to calculate norms for the Rossion and Pourtois (2004) picture set.
+
+Similarly to Forsythe et al. (2017), we provide additional measures of visual complexity for our items using the GIF compression method. Due to potential changes to the visual complexity of the objects as a result of us changing the background size to fit a standard background for all items, we report both our own GIF compression values along with GIF and JPEG compression norms provided by Forsythe and colleagues. We performed GIF compression in GIMP version 2.10.6 (Kimball, Mattis, & The GIMP Development Team, 1995) using the default settings for compression. 
+
+For our subset of items, using our method we found a mean GIF file size of `r compression_scores_williams$GIF_mean` (`r compression_scores_williams$GIF_sd`), while using the Forsythe et al. (2017) method we found a mean GIF file size of `r compression_scores_forsythe$GIF_mean` (`r compression_scores_forsythe$GIF_sd`), mean familiarity score of `r compression_scores_forsythe$familiarity_mean` (`r compression_scores_forsythe$familiarity_sd`), mean encounter score of `r compression_scores_forsythe$encounter_mean` (`r compression_scores_forsythe$encounter_sd`), and a mean complexity score of `r compression_scores_forsythe$complexity_mean` (`r compression_scores_forsythe$complexity_sd`) across items. 
+
+We also calculated the average agreement for object names based on the H statistic for each item, which is the agreement score for an item's name weighted by the number of different names provided for that item (lower values typically indicate greater agreement: see Rossion & Pourtois, 2004), and the mean accuracy in naming (i.e. the percentage of the time with which the most frequent name was used). For those object names that were most frequently selected, we calculated the accuracy for the mean reaction time in naming, and mean colour diagnosticity (i.e. how often the most frequent object name is presented in the colours depicted in the image: 0 being the object could take any colour, 5 being the object only appears in the depicted colour). Overall, our subset of items has a mean agreement score (H) of `r image_norms %>% filter(rating == "agreement_color") %>% pull(mean)` (`r image_norms %>% filter(rating == "agreement_color") %>% pull(sd)`), naming accuracy of `r image_norms %>% filter(rating == "accuracy_color") %>% pull(mean)`% (`r image_norms %>% filter(rating == "accuracy_color") %>% pull(sd)`), reaction time of `r image_norms %>% filter(rating == "RTs_color") %>% pull(mean)`ms (`r image_norms %>% filter(rating == "RTs_color") %>% pull(sd)`), and colour diagnosticity of `r image_norms %>% filter(rating == "colour_diagnosticity") %>% pull(mean)` (`r image_norms %>% filter(rating == "colour_diagnosticity") %>% pull(sd)`).
