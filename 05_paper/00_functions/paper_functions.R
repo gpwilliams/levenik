@@ -98,7 +98,7 @@ summarise_icc <- function(icc_model, round = 2) {
   )
 }
 
-summarise_lme <- function(merMod, col, names, p_asterisk = FALSE){
+summarise_lme <- function(merMod, col, names, asterisk = FALSE){
   # summarises an lme4 model by tidying the input and merging CI limits
   # then uses provided column names and replacements for prettier printing
   # of model terms and properly formats p-values.
@@ -108,7 +108,7 @@ summarise_lme <- function(merMod, col, names, p_asterisk = FALSE){
   #           strings. For example: names <- c("any_string" = "Any String"). 
   #           If abbreviate_interactions == TRUE, only changes main effects
   #           WARNING: This must be changed if any strings contain "---"
-  #         p_asterisk: logical (default FALSE) indicating whether or not to add
+  #         asterisk: logical (default FALSE) indicating whether or not to add
   #           asterisks for levels of significance to p-values.
   # Outputs: tibble of tidied lme4 fixed effects outputs
   colname <- enquo(col)
@@ -117,7 +117,7 @@ summarise_lme <- function(merMod, col, names, p_asterisk = FALSE){
     tidy_lme() %>%
     merge_CI_limits(., "2.5 %", "97.5 %") %>%
     rename_many(., !!colname, names, TRUE, interaction_terms) %>%
-    mutate(p.value = papa(p.value, p_asterisk)) %>%
+    mutate(p.value = papa(p.value, asterisk = asterisk)) %>%
     select(term:std.error, `95% CI`, statistic:p.value)
 }
 

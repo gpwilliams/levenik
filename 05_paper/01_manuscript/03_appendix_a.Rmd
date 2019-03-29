@@ -1,6 +1,6 @@
-## Appendix A. Graphemes used to render phonemes in all experiments. {#appendix-a}
+## Graphemes used to render phonemes in all experiments {#appendix-a}
 
-```{r, echo = FALSE, out.width="10%", out.height = "20%", fig.cap = "Invented graphemes used to represent each phoneme in all experiments. Note: The final two items were created but unused in this series of studies.", fig.show = "hold", fig.align = "center", fig.pos = "htb", warning = FALSE}
+```{r, echo = FALSE, out.width="10%", out.height = "20%", fig.cap = "Invented graphemes used to represent each phoneme in all experiments. Note: The final two items were created but not used in this series of experiments.", fig.show = "hold", fig.align = "center", fig.pos = "htb", warning = FALSE}
 # note: chunk names don't work if you tag your headings, e.g. {#appendix-a}
 # it then thinks chunk names are duplicates (even when they aren't)
 knitr::include_graphics(

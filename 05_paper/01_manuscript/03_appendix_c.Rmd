@@ -1,4 +1,4 @@
-## Appendix D. List of words and their variants. {#appendix-c}
+## List of words and their variants {#appendix-c}
 
 ```{r, results = "asis", warning = FALSE}
 word_list_data <- readr::read_csv(
@@ -16,7 +16,7 @@ kable(
   word_list_data,
   format = "latex",
   booktabs = TRUE, 
-  caption = "Word list used in all experiments. Experiment 1, 2b, and 3 use the opaque pronunciations, while Experiment 2a uses the transparent pronunciations.", 
+  caption = "Word list used in all experiments. Experiment 1, 2b, and 3 use the opaque spellings, while Experiment 2a uses the transparent spellings.", 
   col.names = c("Transaprent", "Opaque", "Non-Contrastive", "Contrastive"),
   longtable = multipage_table,
   escape = FALSE,

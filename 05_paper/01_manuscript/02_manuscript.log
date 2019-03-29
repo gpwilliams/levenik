@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.27)  26 MAR 2019 16:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/W32TeX) (preloaded format=pdflatex 2017.4.27)  29 MAR 2019 17:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -948,28 +948,7 @@ Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
 \TPTL@width=\skip78
 )
 \longtablewidth=\skip79
-(c:/texlive/2016/texmf-dist/tex/latex/lineno/lineno.sty
-Package: lineno 2005/11/02 line numbers on paragraphs v4.41
-\linenopenalty=\count136
-\output=\toks29
-\linenoprevgraf=\count137
-\linenumbersep=\dimen156
-\linenumberwidth=\dimen157
-\c@linenumber=\count138
-\c@pagewiselinenumber=\count139
-\c@LN@truepage=\count140
-\c@internallinenumber=\count141
-\c@internallinenumbers=\count142
-\quotelinenumbersep=\dimen158
-\bframerule=\dimen159
-\bframesep=\dimen160
-\bframebox=\box34
-
-LaTeX Warning: Command \@parboxrestore  has changed.
-               Check if current package is valid.
-
-LaTeX Info: Redefining \\ on input line 3056.
-) (c:/texlive/2016/texmf-dist/tex/latex/tipa/tipa.sty
+(c:/texlive/2016/texmf-dist/tex/latex/tipa/tipa.sty
 Package: tipa 2002/08/08 TIPA version 1.1
 (c:/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/02/22 v2.0g Standard LaTeX package
@@ -984,42 +963,49 @@ File: t1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )) (c:/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/02/22 v2.0g Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-)))
+))) (c:/texlive/2016/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count136
+\float@exts=\toks29
+\float@box=\box34
+\@float@everytoks=\toks30
+\@floatcapt=\box35
+)
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... none found.
 (./02_manuscript.aux)
 \openout1 = `02_manuscript.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 147.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 147.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 145.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 145.
 
 (c:/texlive/2016/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 147.
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 147.
-LaTeX Font Info:    Try loading font information for T3+cmr on input line 147.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 145.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 145.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 145.
 (c:/texlive/2016/texmf-dist/tex/latex/tipa/t3cmr.fd
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
-LaTeX Font Info:    ... okay on input line 147.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 147.
+LaTeX Font Info:    ... okay on input line 145.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 145.
 (c:/texlive/2016/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
@@ -1059,17 +1045,17 @@ File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 
 (c:/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count143
-\scratchdimen=\dimen161
-\scratchbox=\box35
-\nofMPsegments=\count144
-\nofMParguments=\count145
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count146
-\MPscratchDim=\dimen162
-\MPnumerator=\count147
-\makeMPintoPDFobject=\count148
-\everyMPtoPDFconversion=\toks31
+\scratchcounter=\count137
+\scratchdimen=\dimen156
+\scratchbox=\box36
+\nofMPsegments=\count138
+\nofMParguments=\count139
+\everyMPshowfont=\toks31
+\MPscratchCnt=\count140
+\MPscratchDim=\dimen157
+\MPnumerator=\count141
+\makeMPintoPDFobject=\count142
+\everyMPtoPDFconversion=\toks32
 ) (c:/texlive/2016/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 (c:/texlive/2016/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -1088,13 +1074,14 @@ e
 File: APAamerican.txt 2012/02/23 v1.25 apa6 configuration for American English
 )
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
 (c:/texlive/2016/texmf-dist/tex/latex/caption/ltcaption.sty
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-LaTeX Info: Redefining \microtypecontext on input line 147.
+LaTeX Info: Redefining \microtypecontext on input line 145.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using protrusion set `basicmath'.
@@ -1108,7 +1095,7 @@ Package microtype Info: No adjustment of character kerning.
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman 
 (RS)
 )
-\AtBeginShipoutBox=\box36
+\AtBeginShipoutBox=\box37
 (c:/texlive/2016/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
 (c:/texlive/2016/texmf-dist/tex/latex/graphics-cfg/color.cfg
@@ -1118,55 +1105,55 @@ Package color Info: Driver file: pdftex.def on input line 147.
 (c:/texlive/2016/texmf-dist/tex/latex/graphics/dvipsnam.def
 File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
 ))
-Package hyperref Info: Link coloring ON on input line 147.
+Package hyperref Info: Link coloring ON on input line 145.
 (c:/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (c:/texlive/2016/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count149
+\c@section@level=\count143
 )
-LaTeX Info: Redefining \ref on input line 147.
-LaTeX Info: Redefining \pageref on input line 147.
-LaTeX Info: Redefining \nameref on input line 147.
+LaTeX Info: Redefining \ref on input line 145.
+LaTeX Info: Redefining \pageref on input line 145.
+LaTeX Info: Redefining \nameref on input line 145.
 (./02_manuscript.out) (./02_manuscript.out)
 \@outlinefile=\write3
 \openout3 = `02_manuscript.out'.
 
 Using title for running head
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 149.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 147.
 
 (c:/texlive/2016/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 149.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 147.
 
 (c:/texlive/2016/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 149
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 147
 .
 (c:/texlive/2016/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 149
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 147
 .
 (c:/texlive/2016/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 149.
+(Font)              <14.4> on input line 147.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 149.
+(Font)              <10> on input line 147.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 149.
-LaTeX Font Info:    Try loading font information for U+msa on input line 149.
+(Font)              <7> on input line 147.
+LaTeX Font Info:    Try loading font information for U+msa on input line 147.
 (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (c:/texlive/2016/texmf-dist/tex/latex/microtype/mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 149.
+LaTeX Font Info:    Try loading font information for U+msb on input line 147.
 (c:/texlive/2016/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (c:/texlive/2016/texmf-dist/tex/latex/microtype/mt-msb.cfg
@@ -1175,419 +1162,403 @@ File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 File: mt-eur.cfg 2006/07/31 v1.1 microtype config. file: AMS Euler Roman (RS)
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 149.
+(Font)              <10.95> on input line 147.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 149.
+(Font)              <8> on input line 147.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 149.
+(Font)              <6> on input line 147.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 149.
+(Font)              <9> on input line 147.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 149.
+(Font)              <5> on input line 147.
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Underfull \vbox (badness 2150) has occurred while \output is active []
 
 [1
 
-{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-LaTeX Font Info:    Try loading font information for TS1+lmr on input line 322.
-
-(c:/texlive/2016/texmf-dist/tex/latex/lm/ts1lmr.fd
-File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [4] [5]
-LaTeX Font Info:    Try loading font information for T3+lmr on input line 457.
-LaTeX Font Info:    No file T3lmr.fd. on input line 457.
+{c:/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] [4] [5]
+LaTeX Font Info:    Try loading font information for T3+lmr on input line 456.
+LaTeX Font Info:    No file T3lmr.fd. on input line 456.
 
 LaTeX Font Warning: Font shape `T3/lmr/m/n' undefined
-(Font)              using `T3/cmr/m/n' instead on input line 457.
+(Font)              using `T3/cmr/m/n' instead on input line 456.
 
 [6] [7] [8] [9] [10] [11] [12] [13]
 <C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-0_trainin
-g_plot_reading.png, id=312, 867.24pt x 578.16pt>
+g_plot_reading.png, id=309, 867.24pt x 578.16pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-0_tr
 aining_plot_reading.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-0_tra
 ining_plot_reading.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-0_training_plot_reading.png used on input line 902.
+put/experiment-0_training_plot_reading.png used on input line 896.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [14 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-0_tra
-ining_plot_reading.png (PNG copy)>]
+ining_plot_reading.png (PNG copy)>] [15]
 <C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-0_testing
-_plot_reading.png, id=320, 867.24pt x 578.16pt>
+_plot_reading.png, id=324, 867.24pt x 578.16pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-0_te
 sting_plot_reading.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-0_tes
 ting_plot_reading.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-0_testing_plot_reading.png used on input line 981.
+put/experiment-0_testing_plot_reading.png used on input line 964.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-[15] [16 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-
-0_testing_plot_reading.png>] [17] [18]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[19]
+[16 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-0_tes
+ting_plot_reading.png>] [17] [18] [19] [20] [21]
 <C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_trainin
-g_plot_reading.png, id=354, 867.24pt x 578.16pt>
+g_plot_reading.png, id=360, 867.24pt x 578.16pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_tr
 aining_plot_reading.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_tra
 ining_plot_reading.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-1_training_plot_reading.png used on input line 1264.
+put/experiment-1_training_plot_reading.png used on input line 1263.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_trainin
-g_plot_spelling.png, id=355, 867.24pt x 578.16pt>
+g_plot_spelling.png, id=361, 867.24pt x 578.16pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_tr
 aining_plot_spelling.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_tra
 ining_plot_spelling.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-1_training_plot_spelling.png used on input line 1273.
+put/experiment-1_training_plot_spelling.png used on input line 1272.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-[20]
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
+[22 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_tra
+ining_plot_reading.png (PNG copy)>] [23 <c:/Users/g517364/Dropbox/GitHub/leveni
+k/04_figures/output/experiment-1_training_plot_spelling.png (PNG copy)>] [24]
 <C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_testing
-_plot_reading.png, id=367, 867.24pt x 578.16pt>
+_plot_reading.png, id=381, 867.24pt x 578.16pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_te
 sting_plot_reading.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_tes
 ting_plot_reading.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-1_testing_plot_reading.png used on input line 1341.
+put/experiment-1_testing_plot_reading.png used on input line 1344.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-
-<C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_testing
-_plot_spelling.png, id=368, 867.24pt x 578.16pt>
-File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_te
-sting_plot_spelling.png Graphic file (type png)
-
-<use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_tes
-ting_plot_spelling.png>
-Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-1_testing_plot_spelling.png used on input line 1350.
-(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-[21 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_tra
-ining_plot_reading.png (PNG copy)>] [22 <c:/Users/g517364/Dropbox/GitHub/leveni
-k/04_figures/output/experiment-1_training_plot_spelling.png (PNG copy)>] [23] [
-24 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_test
-ing_plot_reading.png>]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
-<C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_trainin
-g_plot_reading.png, id=390, 867.24pt x 578.16pt>
-File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tr
-aining_plot_reading.png Graphic file (type png)
-
-<use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tra
-ining_plot_reading.png>
-Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-2_training_plot_reading.png used on input line 1533.
-(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-
-<C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_trainin
-g_plot_spelling.png, id=391, 867.24pt x 578.16pt>
-File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tr
-aining_plot_spelling.png Graphic file (type png)
-
-<use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tra
-ining_plot_spelling.png>
-Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-2_training_plot_spelling.png used on input line 1542.
-(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [25 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_tes
-ting_plot_spelling.png>]
+ting_plot_reading.png>]
+<C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_testing
+_plot_spelling.png, id=388, 867.24pt x 578.16pt>
+File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_te
+sting_plot_spelling.png Graphic file (type png)
+
+<use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_tes
+ting_plot_spelling.png>
+Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
+put/experiment-1_testing_plot_spelling.png used on input line 1355.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+[26 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-1_tes
+ting_plot_spelling.png>] [27] [28] [29]
+<C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_trainin
+g_plot_reading.png, id=413, 867.24pt x 578.16pt>
+File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tr
+aining_plot_reading.png Graphic file (type png)
+
+<use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tra
+ining_plot_reading.png>
+Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
+put/experiment-2_training_plot_reading.png used on input line 1540.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+[30 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tra
+ining_plot_reading.png (PNG copy)>]
+<C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_trainin
+g_plot_spelling.png, id=418, 867.24pt x 578.16pt>
+File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tr
+aining_plot_spelling.png Graphic file (type png)
+
+<use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tra
+ining_plot_spelling.png>
+Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
+put/experiment-2_training_plot_spelling.png used on input line 1551.
+(pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
+[31 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tra
+ining_plot_spelling.png>]
 <C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_testing
-_plot_reading.png, id=408, 867.24pt x 578.16pt>
+_plot_reading.png, id=432, 867.24pt x 578.16pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_te
 sting_plot_reading.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tes
 ting_plot_reading.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-2_testing_plot_reading.png used on input line 1611.
+put/experiment-2_testing_plot_reading.png used on input line 1620.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[32]
 <C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_testing
-_plot_spelling.png, id=409, 867.24pt x 578.16pt>
+_plot_spelling.png, id=437, 867.24pt x 578.16pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_te
 sting_plot_spelling.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tes
 ting_plot_spelling.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-2_testing_plot_spelling.png used on input line 1620.
+put/experiment-2_testing_plot_spelling.png used on input line 1629.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-[26]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[33 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tes
+ting_plot_reading.png>] [34 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures
+/output/experiment-2_testing_plot_spelling.png>]
 <C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiments-1-to-2_w
-ord-novelty.png, id=415, 867.24pt x 578.16pt>
+ord-novelty.png, id=451, 867.24pt x 578.16pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiments-1-t
 o-2_word-novelty.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiments-1-to
 -2_word-novelty.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiments-1-to-2_word-novelty.png used on input line 1663.
+put/experiments-1-to-2_word-novelty.png used on input line 1682.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-[27 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tra
-ining_plot_reading.png (PNG copy)>]
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[28 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-2_tra
-ining_plot_spelling.png>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[29] [30 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-
-2_testing_plot_reading.png>] [31 <c:/Users/g517364/Dropbox/GitHub/levenik/04_fi
-gures/output/experiment-2_testing_plot_spelling.png>] [32 <c:/Users/g517364/Dro
-pbox/GitHub/levenik/04_figures/output/experiments-1-to-2_word-novelty.png>] [33
-]
+[35 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiments-1-to
+-2_word-novelty.png>] [36] [37] [38]
 <C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_trainin
-g_plot_reading.png, id=460, 867.24pt x 578.16pt>
+g_plot_reading.png, id=480, 867.24pt x 578.16pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_tr
 aining_plot_reading.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_tra
 ining_plot_reading.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-3_training_plot_reading.png used on input line 1876.
+put/experiment-3_training_plot_reading.png used on input line 1889.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-
+[39 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_tra
+ining_plot_reading.png (PNG copy)>]
 <C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_trainin
-g_plot_spelling.png, id=461, 867.24pt x 578.16pt>
+g_plot_spelling.png, id=485, 867.24pt x 578.16pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_tr
 aining_plot_spelling.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_tra
 ining_plot_spelling.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-3_training_plot_spelling.png used on input line 1885.
+put/experiment-3_training_plot_spelling.png used on input line 1900.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-
+[40 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_tra
+ining_plot_spelling.png (PNG copy)>] [41]
 <C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_testing
-_plot_reading.png, id=465, 867.24pt x 578.16pt>
+_plot_reading.png, id=501, 867.24pt x 578.16pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_te
 sting_plot_reading.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_tes
 ting_plot_reading.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-3_testing_plot_reading.png used on input line 1943.
+put/experiment-3_testing_plot_reading.png used on input line 1961.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_testing
-_plot_spelling.png, id=466, 867.24pt x 578.16pt>
+_plot_spelling.png, id=502, 867.24pt x 578.16pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_te
 sting_plot_spelling.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_tes
 ting_plot_spelling.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/04_figures/out
-put/experiment-3_testing_plot_spelling.png used on input line 1952.
+put/experiment-3_testing_plot_spelling.png used on input line 1970.
 (pdftex.def)             Requested size: 433.61894pt x 289.07928pt.
-[34 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_tra
-ining_plot_reading.png (PNG copy)>]
 
-LaTeX Warning: Text page 35 contains only floats.
-
-[35 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_tra
-ining_plot_spelling.png (PNG copy)>] [36 <c:/Users/g517364/Dropbox/GitHub/leven
-ik/04_figures/output/experiment-3_testing_plot_reading.png>] [37 <c:/Users/g517
-364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_testing_plot_spelling
-.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[38]
+[42 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures/output/experiment-3_tes
+ting_plot_reading.png>] [43 <c:/Users/g517364/Dropbox/GitHub/levenik/04_figures
+/output/experiment-3_testing_plot_spelling.png>] [44] [45] [46] [47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[39] [40] [41] [42] [43] [44] [45] [46] [47]
+[48] [49] [50] [51] [52] [53]
+Underfull \hbox (badness 1533) in paragraph at lines 2655--2658
+ []\T1/lmr/m/n/10.95 (+20) Rodd, J. (2019). How to Main-tain Data Qual-ity When
+ You Can't See Your
+ []
+
+
+Underfull \hbox (badness 1152) in paragraph at lines 2655--2658
+ \T1/lmr/m/n/10.95 (+20) Par-tic-i-pants. Re-trieved from [][]$https : / / www 
+. psychologicalscience . org / observer /
+ []
+
+[54] [55]
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-1.png, id=673, 205.568pt x 205.568pt>
+1.png, id=705, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/1.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/1.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/1.png used on input line 2715.
+mages/script/script_PNG/1.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-2.png, id=675, 205.568pt x 205.568pt>
+2.png, id=707, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/2.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/2.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/2.png used on input line 2715.
+mages/script/script_PNG/2.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-3.png, id=676, 205.568pt x 205.568pt>
+3.png, id=708, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/3.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/3.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/3.png used on input line 2715.
+mages/script/script_PNG/3.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-4.png, id=677, 205.568pt x 205.568pt>
+4.png, id=709, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/4.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/4.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/4.png used on input line 2715.
+mages/script/script_PNG/4.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-5.png, id=678, 205.568pt x 205.568pt>
+5.png, id=710, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/5.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/5.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/5.png used on input line 2715.
+mages/script/script_PNG/5.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-6.png, id=679, 205.568pt x 205.568pt>
+6.png, id=711, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/6.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/6.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/6.png used on input line 2715.
+mages/script/script_PNG/6.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-7.png, id=680, 205.568pt x 205.568pt>
+7.png, id=712, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/7.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/7.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/7.png used on input line 2715.
+mages/script/script_PNG/7.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-8.png, id=681, 205.568pt x 205.568pt>
+8.png, id=713, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/8.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/8.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/8.png used on input line 2715.
+mages/script/script_PNG/8.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-9.png, id=682, 205.568pt x 205.568pt>
+9.png, id=714, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/9.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/9.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/9.png used on input line 2715.
+mages/script/script_PNG/9.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-10.png, id=683, 205.568pt x 205.568pt>
+10.png, id=715, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/10.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/10.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/10.png used on input line 2715.
+mages/script/script_PNG/10.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-11.png, id=684, 205.568pt x 205.568pt>
+11.png, id=716, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/11.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/11.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/11.png used on input line 2715.
+mages/script/script_PNG/11.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-12.png, id=685, 205.568pt x 205.568pt>
+12.png, id=717, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/12.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/12.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/12.png used on input line 2715.
+mages/script/script_PNG/12.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-13.png, id=686, 205.568pt x 205.568pt>
+13.png, id=718, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/13.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/13.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/13.png used on input line 2715.
+mages/script/script_PNG/13.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-14.png, id=687, 205.568pt x 205.568pt>
+14.png, id=719, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/14.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/14.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/14.png used on input line 2715.
+mages/script/script_PNG/14.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
 
 <C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/
-15.png, id=688, 205.568pt x 205.568pt>
+15.png, id=720, 205.568pt x 205.568pt>
 File: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script
 _PNG/15.png Graphic file (type png)
 
 <use C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/15.png>
 Package pdftex.def Info: C:/Users/g517364/Dropbox/GitHub/levenik/01_materials/i
-mages/script/script_PNG/15.png used on input line 2715.
+mages/script/script_PNG/15.png used on input line 2742.
 (pdftex.def)             Requested size: 43.36188pt x 43.36188pt.
-[48
+[56
 
  <c:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG
 /1.png> <c:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/scr
@@ -1605,38 +1576,43 @@ rs/g517364/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/11.png>
 /12.png> <c:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/script/sc
 ript_PNG/13.png> <c:/Users/g517364/Dropbox/GitHub/levenik/01_materials/images/s
 cript/script_PNG/14.png> <c:/Users/g517364/Dropbox/GitHub/levenik/01_materials/
-images/script/script_PNG/15.png>] [49
+images/script/script_PNG/15.png>]
+LaTeX Font Info:    Try loading font information for TS1+lmr on input line 2763
+.
+(c:/texlive/2016/texmf-dist/tex/latex/lm/ts1lmr.fd
+File: ts1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [57
 
-] [50
+] [58
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2863.
-[51
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2889.
+[59
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2863.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2889.
 (./02_manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2863.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2863.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2889.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2889.
 
 Package rerunfilecheck Info: File `02_manuscript.out' has not changed.
-(rerunfilecheck)             Checksum: 0B28D1072BC3CA530BD6D136939DB077;7328.
+(rerunfilecheck)             Checksum: F12AC7DF984FCB343E78F2A370F99213;7160.
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 17145 strings out of 493013
- 259271 string characters out of 6136993
- 402689 words of memory out of 5000000
- 19958 multiletter control sequences out of 15000+600000
- 126430 words of font info for 204 fonts, out of 8000000 for 9000
+ 16994 strings out of 493013
+ 256869 string characters out of 6136993
+ 382204 words of memory out of 5000000
+ 19800 multiletter control sequences out of 15000+600000
+ 123570 words of font info for 202 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 43i,11n,47p,2246b,507s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2016/tex
-mf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}{c:/texlive/2016/texmf-dist/fonts/enc/
-dvips/lm/lm-ec.enc}{c:/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc
-}{c:/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}<c:/texlive/2016/tex
+ 43i,11n,47p,2246b,505s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{c:/texlive/2016/te
+xmf-dist/fonts/enc/dvips/lm/lm-rm.enc}{c:/texlive/2016/texmf-dist/fonts/enc/dvi
+ps/lm/lm-mathsy.enc}{c:/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}{c
+:/texlive/2016/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}<c:/texlive/2016/tex
 mf-dist/fonts/type1/public/lm/lmbx10.pfb><c:/texlive/2016/texmf-dist/fonts/type
 1/public/lm/lmbx8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmbxi10
 .pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmmi10.pfb><c:/texlive/2
@@ -1647,14 +1623,13 @@ e/2016/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/texlive/2016/texmf-dist/fo
 nts/type1/public/lm/lmr8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/
 lmr9.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmri10.pfb><c:/texli
 ve/2016/texmf-dist/fonts/type1/public/lm/lmri9.pfb><c:/texlive/2016/texmf-dist/
-fonts/type1/public/lm/lmss8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/
-lm/lmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/lm/lmsy8.pfb><c:/t
-exlive/2016/texmf-dist/fonts/type1/public/tipa/tipa10.pfb><c:/texlive/2016/texm
-f-dist/fonts/type1/public/tipa/tipa9.pfb>
-Output written on 02_manuscript.pdf (51 pages, 3017579 bytes).
+fonts/type1/public/lm/lmsy10.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public
+/lm/lmsy8.pfb><c:/texlive/2016/texmf-dist/fonts/type1/public/tipa/tipa10.pfb><c
+:/texlive/2016/texmf-dist/fonts/type1/public/tipa/tipa9.pfb>
+Output written on 02_manuscript.pdf (59 pages, 2993974 bytes).
 PDF statistics:
- 848 PDF objects out of 1000 (max. 8388607)
- 715 compressed objects within 8 object streams
- 225 named destinations out of 1000 (max. 500000)
+ 879 PDF objects out of 1000 (max. 8388607)
+ 739 compressed objects within 8 object streams
+ 236 named destinations out of 1000 (max. 500000)
  16927 words of extra memory for PDF output out of 17280 (max. 10000000)
 

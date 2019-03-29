@@ -1,4 +1,4 @@
-## Appendix C. The Gruffalo books. {#appendix-b}
+## The Gruffalo books {#appendix-b}
 
 ### The Gruffalo
 
@@ -13,4 +13,4 @@
 - Thi Dundee Gruffalo's Bairn (translated by Matthew Fitt)
 - The Gruffalo's Wean (Scots; translated by James Robertson)
 
-Note: The Gruffalo's Child was not available in Glaswegian during creation of this corpus analysis.
+Note: The Gruffalo's Child was not available in Glaswegian at the time of this corpus analysis.

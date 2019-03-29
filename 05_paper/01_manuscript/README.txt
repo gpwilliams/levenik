@@ -1,0 +1,1 @@
+Word manuscripts are created by opening the rendered PDF in Word and manually editing the document.
