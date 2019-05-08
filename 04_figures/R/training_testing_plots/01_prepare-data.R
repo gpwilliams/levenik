@@ -38,7 +38,7 @@ data <- data %>%
     language_variety = factor(
       language_variety,
       levels = c("standard", "dialect"),
-      labels = c("Variety Match", "Variety Mismatch")
+      labels = c("Variety Match", "Variety Mismatch") 
     ),
     # only relevant for experiments 1 and 2 (ex 0 = reading only)
     task = factor(

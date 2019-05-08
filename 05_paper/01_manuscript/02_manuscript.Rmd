@@ -27,7 +27,7 @@ abstract: |
   
 keywords          : "literacy, dialect, artificial language learning"
 wordcount         : "13,992"
-
+note              : "THIS IS A PREPRINT THAT HAS BEEN SUBMITTED FOR PUBLICATION AND HAS NOT YET BEEN PEER-REVIEWED."
 bibliography      : ["r-references.bib", "main-references.bib"]
 floatsintext      : yes
 figurelist        : no
@@ -41,7 +41,7 @@ documentclass     : "apa6"
 classoption       : "doc" # can be "man", "doc", or "jou"
 output            : 
   papaja::apa6_pdf: # apa6_pdf
-    keep_tex: TRUE
+    keep_tex: FALSE
 appendix          : 
   - "03_appendix_a.Rmd"
   - "03_appendix_b.Rmd"
@@ -93,6 +93,9 @@ header-includes   :
 # remove use of here::here in figures, and replace with, e.g.
 # knitr::include_graphics("../../04_figures/output/fig.png")
 # then you need those folders in the LaTeX zip file for submission
+
+# knitr::is_latex_output() can help with parsing latex or word tables
+# with conditional formatting
 ```
 
 ```{r packages-and-functions, include = FALSE, message = FALSE, warning = FALSE}
@@ -164,6 +167,8 @@ table_format_args <- list(
 # must be TRUE if using "man", as tables span multiple pages
 multipage_table <- FALSE
 ```
+
+\newpage
 
 # Introduction
 
@@ -1162,7 +1167,7 @@ At the same time, the Word Familiarity effect observed for reading in the Variet
 
 In three experiments we investigated the effect of exposure to linguistic variants of words on literacy learning. Employing an artificial language with an invented script allowed us to control for potential confounds that often are associated with dialect exposure such as differences in home literacy environment, cultural attitudes to literacy or educational provision. Previous research [@Brown2015] had shown that encountering a variety mismatch impairs processing of contrastive words, i.e. words with different variants across varieties (e.g. Scots /hoose/ vs. English /house/ or AAE /aks/ vs. MAE /ask/). What remained unclear was whether impaired performance with these contrastive words is also associated with a general deficit in literacy acquisition, especially in learners' decoding abilities as measured by reading and spelling of untrained words. 
 
-The results confirmed and extended the finding of a contrastive deficit in children exposed to AAE reported by @Brown2015. We replicated this deficit and showed that it appeared most reliably when pictures enabled participants to establish semantic representations (Experiment 2a), and when a transparent orthography (Experiment 2a) or sufficient training (Experiment3) allowed participants to also establish phonological representations. There were no contrastive deficits in spelling. Thus, when two variants are associated with the same meaning competition between them impaired reading but not spelling. Even though the contrastive deficit in reading emerged also in some instances when no pictures were present, it appeared more consistently in conditions with pictures suggesting that shared semantic representations seem to exacerbate competition between variants. This is in line with interactive activation and competition models which place the locus of inhibition from high-frequency competitors at the lexical layer. The existence of a semantic representation will have reinforced the lexical competition via bidirectional connections between lexical and semantic representations [@Chen2012]. Thus, without a semantic layer, the connectionist simulation reported by @Brown2015 may even have somewhat underestimated the degree of competition between dialect variants of the same word. We predict that the addition of a semantic layer to a connectionist model of this type should result in an even more pronounced contrastive deficit.
+The results confirmed and extended the finding of a contrastive deficit in children exposed to AAE reported by @Brown2015. We replicated this deficit and showed that it appeared most reliably when pictures enabled participants to establish semantic representations (Experiment 2a), and when a transparent orthography (Experiment 2a) or sufficient training (Experiment 3) allowed participants to also establish phonological representations. There were no contrastive deficits in spelling. Thus, when two variants are associated with the same meaning competition between them impaired reading but not spelling. Even though the contrastive deficit in reading emerged also in some instances when no pictures were present, it appeared more consistently in conditions with pictures suggesting that shared semantic representations seem to exacerbate competition between variants. This is in line with interactive activation and competition models which place the locus of inhibition from high-frequency competitors at the lexical layer. The existence of a semantic representation will have reinforced the lexical competition via bidirectional connections between lexical and semantic representations [@Chen2012]. Thus, without a semantic layer, the connectionist simulation reported by @Brown2015 may even have somewhat underestimated the degree of competition between dialect variants of the same word. We predict that the addition of a semantic layer to a connectionist model of this type should result in an even more pronounced contrastive deficit.
 
 Contrastive words are therefore unlike cognates in bilingual word processing where the existence of a similar variant in another language facilitates L1 and L2 reading due to language-non-specific automatic co-activation of the phonologically similar translation equivalent [@VanAssche2009]. It is interesting to ponder what might be responsible for these differences in bilingual and bi-dialectal word processing. For example, it is conceivable that something akin to cognate facilitation can emerge for contrastive words at later stages of literacy acquisition under conditions of dialect exposure when clear socially conditioned language-specific production constraints, i.e. a clear understanding as to where and when to use each variety, are acquired. It is also possible that cognate facilitation in bilingual readers emerges only if bilinguals are trained to read in both languages, so that facilitation arises from partially or fully shared orthographic representations. Future research will have to show whether bi-dialectal individuals will start exhibiting facilitation for contrastive words once they become proficient in selectively using each of their varieties in appropriate contexts and situations, whether facilitation only occurs when individuals learn to read in both varieties or whether representations of languages vs. dialects are qualitatively different giving rise to different patterns of co-activation and inhibition. 
 

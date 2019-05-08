@@ -1,3 +1,4 @@
+# Author: David Robinson
 # see: https://gist.github.com/dgrtwo/eb7750e74997891d7c20
 
 "%||%" <- function(a, b) {

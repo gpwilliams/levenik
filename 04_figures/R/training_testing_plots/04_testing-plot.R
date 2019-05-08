@@ -33,7 +33,7 @@ violin_dotplot <-
   scale_colour_manual(values = c("white", "white", "black")) +
   scale_fill_grey() +
   scale_y_continuous(breaks = seq(0, 1, by = 0.2)) +
-  labs(x = "Word Type", y = "Mean Normalised Levenshtein Edit Distance") +
+  labs(x = "Word Type", y = "Mean Normalised Levenshtein Edit Distance") + 
   geom_text(
     data = summary_data %>% 
       filter(

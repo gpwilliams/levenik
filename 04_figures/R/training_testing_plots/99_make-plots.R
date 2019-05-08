@@ -62,27 +62,27 @@ for (i in seq_along(experiments)) {
   }
   
   # run files
-  source(here("04_figures", "R_code", "01_prepare-data.R"))
+  source(here("04_figures", "R", "training_testing_plots", "01_prepare-data.R"))
   
   for (each_task in seq_along(tasks)) {
     this_task <- tasks[each_task]
     source(here(
       "04_figures", 
-      "R_code", 
+      "R", 
       "training_testing_plots", 
       "02_plotting-variables.R"
     ))
     
     source(here(
       "04_figures", 
-      "R_code", 
+      "R", 
       "training_testing_plots", 
       "03_training-plot.R"
     ))
     
     source(here(
       "04_figures", 
-      "R_code", 
+      "R", 
       "training_testing_plots", 
       "04_testing-plot.R"
     ))
