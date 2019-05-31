@@ -4,7 +4,7 @@ Note that due to excessive file sizes associated with storing Bayesian analyses 
 
 There are 5 folders for this analysis:
 
-## **01_materials**: contains /audio/, /images/, and /word_list/ folders:
+## **01_materials**: contains subfolders audio/, images/, and word_list/:
 
 1. * **audio**: contains the /phonemes/ and /words/ folders
     * *phonemes*: .wav files of the individual phonemes used during exposure phases. These are coded using [CPSAMPA](http://clearpond.northwestern.edu/ipa_cpsampa.html). Files are appended by _male or _female indicating the speaker gender.
@@ -46,99 +46,77 @@ There are 5 folders for this analysis:
         * 01_word_ruleset.Rmd: Provides the R-markdown code for generating the .pdf found in docs.
         * 99_run-all.R: contains the code to render the R-markdown code found in 01_word_ruleset.Rmd, including loading of packages.
     
-Additionally contains a README.txt outlining some notes on the language and its construction.
+Additionally contains a README.txt with some notes on the language and its construction.
 
-## **02_data**:
+## **02_data**: contains subfolders 01_study-zero/, 02_study-one-and-two/, 03_study-three/, and 99_R-scripts/
 
-Raw Data Files
-=======================================================
-PUT EXPLANATIONS HERE
+1. * **01_study-zero**: contains 01_raw-data/, 02_merged-data, 03_cleaned-data/, 04_simulated-data/, and 05_data-checks/ subfolders:
+    * *01_raw-data*: contains .csv files for the raw data gathered during the experiment. Note that recordings of spoken responses are not provided, but transcriptions of these files are provided in reading_coding.csv.
+        * reading_coding.csv: transcriptions of spoken responses. Contains the following columns;
+            * code_id: integers assigned to identify transcribed trials.
+            * timestamp: timestamp of transcription in YMD-HMS format.
+            * coder: name of the person who transcribed the trial.
+            * trial_id: integers assigned to the trial being coded. Relates to trial_id in reading_task.csv and writing_task.csv.
+            * session_number: integers assigned to a participant. Relates to session_number in reading_task.csv and writing_task.csv.
+            * target: spelling for the written word on a given trial. Unidentifiable phonemes or diphthongs are represented by ? (diphthongs are not in the language). Missing trials or those unidentifiable as a result of technical errors are coded as \*. Some variations of ? and \* (e.g. ???) are in the raw data, but are standardised to single codes in the R scripts.
+            * coded_response: the transcriber's interpretation of the spoken response.
+            * correct: 0 = incorrect, 1 = correct.
+            * edit_distance: length-normalised Levenshtein Edit distance (nLED). 0 = no insertions, deletions, or substitutions required to transform the coded_response to the target. Higher scores (up to 1) include some number of insertions, deletions, or substitutions to transform the coded_response to the target.
+        * reading_task.csv:
+            * trial_id: same interpretation as in reading_coding.csv.
+            * timestamp: same interpretation as in reading_coding.csv.
+            * session_number: same interpretation as in reading_coding.csv.
+            * session_trial_id: the trial ID for a given participant (i.e. session_number).
+            * section: section by which inputs are provided by the participant. These are prefixed by the task (R = Reading, W = Writing). Underscores separate the task by the block. For the training phase, these are defined as "TR" and appended with a number indicating block number. For the testing phase, these are simply defined as "TEST".
+            * section_trial_id: the trial ID within a given section (e.g. training block 1 is defined as one section, block 2 is another section).
+            * word_id: integers assigned to identify a given word. Relates to the word_id in word_list.csv.
+            * novel_word_for_task: Defines whether or not a word has been seen/heard before for the participant during a given task.
+            * exposure_count: tracks the number of times a participant has been exposed to a word as the trials progress.
+            * picture_id: integers identifying the ID number associated with a picture associated with a word. Pictures are randomly assigned to words for each participant. This relates to the numbers associated with pictures in 01_materials/images/img/centred_subset. 
+            * word_length: the number of letters in the given target.
+            * target: same interpretation as in reading_coding.csv.
+            * participant_input: the transcriber's most recent interpretation of the spoken response.
+            * correct: same interpretation as in reading_coding.csv.
+            * edit_distance: same interpretation as in reading_coding.csv.
+        * sessions.csv: 
+            * session_number: same interpretation as in reading_coding.csv.
+            * progress: string indicating how far participants progressed in the experiment. END = completed the experiment, START = saw the beginning of the experiment (i.e. got past demographics and instructions). labels appended with INSTR_ indicate inter-stimulus sections. Exposure = word exposure phase. SCRIPT = instructions. Other labels relate to the block number outlined in the section column of reading_task.csv.
+            * completion_code: unique completion code provided to participants only at the end of the experiment. Used only for verifying completion.
+            * alphabet_key: string describing the associations between artificial letters and sounds. Each artificial letter is known by a numerical identifier (1-14) while sounds are represented in Latin letters. In alphabet_key, the 14 locations of each character represents 1 to 14 artificial letters, while the value of the character (Latin letter) represents the sound for that artificial letter. Every session gets randomly assigned letter to sound correspondences, hence the alphabet_key stores this information concisely.
+            * language_condition: dialect = learners hear two different varieties (one during word exposure, one during learning); standard = learners hear one variety throughout.
+            * order_condition: defines the task order. This is simply RR for this experiment, denoting that Reading training (blocks 1-3) is followed by another set of reading training (blocks 4-6).
+            * picture_condition: defines whether (1) or not (0) a picture was present and associated with words during exposure, training, and testing phases.
+            * speaker_condition: defines the speaker gender for the stimuli (female or male).
+            * orthography_condition: defines whether the writing system was transparent (i.e. 1-to-1 mapping between sounds and phonemes) or opaque (i.e. conditional rules for spellings; see **01_materials**).
+            * start_timestamp: datetime at which participants started the experiment (YMD-HMS).
+            * end_timestamp: datetime at which participants completed the experiment (YMD-HMS).
+            * age: age of the participant in years. Those who do not complete the task have not provided an age and thus default to 0.
+            * gender: gender of the participant: m = male, f = female; o = other. Those who did not complete the experiment have no value for gender.
+            * english: Likert rating from 1-5 for a self-rating of English proficiency; 1 is elementary proficiency and 5 is native or bilingual proficiency. Missing values (e.g. for non-completion) are assigned 0.
+            * fun: Likert rating from 1-5 of the statement "I found the study fun." with 1 being "Strongly Disagree" and 5 being "Strongly Agree". Missing values (e.g. for non-completion) are assigned 0.
+            * noise: Likert rating from 1-5 of the statement "I could hear the words in the study clearly." with 1 being Strongly Disagree and 5 being Strongly Agree. Missing values (e.g. for non-completion) are assigned 0.
+        * sessions_languages.csv: 
+            * input_id: integer determining at which order in the transcription a transcribed input was provided.
+            * session_number: same interpretation as in reading_coding.csv.
+            * language: String input provided by the participant outlining their languages spoken.
+            * self_rating: Likert rating of proficiency in the self-reported language in the language column from 1-5 where 1 is elementary proficiency and 5 is native or bilingual proficiency.
+        * word_list.csv: 
+            * word_id: integer giving an ID for a given word.
+            * word: spelling/pronunciation of the word using CPSAMPA notation.
+            * dialect_version: pronunciation of the word in the "dialect" version of the language spoken during the exposure phase in the "dialect"/two-variety condition.
+            * opaque_spelling: spelling of the word after adhering to the conditional rules for construction of the opaque language. This column is irrelevant for the transparent orthography condition.
 
-reading_coding
-reading_task
-sessions
-session_languages
-writing_task
-
-Cleaned Data Files
-=======================================================
-PUT EXPLANATIONS HERE
-
-ex1_2_cleaned
-ex1_2_filtered
-ex1_2_filtered_subsetted
-
-All contain demo.data and rw.data files
-
-File Headings
-=======================================================
-
-All file headings are based on ex1_2_filtered
-and ex1_2_filtered_subsetted 
-(which share identical headings)
-
-demo.data
----------
-
-PUT EXPLANATIONS (AND DATA TYPE) TO THE SIDE OF EACH HEADING
-
-participant_number
-language_variety
-orthography_condition
-picture_condition
-order_condition
-speaker_condition
-age
-gender
-language_spoken
-language_proficiency_rating
-fun_rating
-noise_rating
-start_timestamp
-end_timestamp
-total_time
-
-rw.data
--------
-
-PUT EXPLANATIONS (AND DATA TYPE) TO THE SIDE OF EACH HEADING 
-
-trial_id
-participant_number
-session_trial_id
-section_trial_id
-task_trial_id
-language_variety
-orthography_condition
-picture_condition
-order_condition
-speaker_condition
-task
-block
-picture_id
-word_id
-test_words
-dialect_words
-target_length
-exposure_count
-target
-primary_coder_response
-primary_coder_response_length
-primary_max_word_length
-primary_coder_correct
-primary_coder_nLED
-secondary_coder_response
-secondary_coder_response_length
-secondary_max_word_length
-secondary_coder_correct
-secondary_coder_nLED
-lenient_max_word_length
-lenient_correct
-lenient_nLED
-stringent_max_word_length
-stringent_correct
-stringent_nLED
-running_time
+    * *02_merged-data*: contains two .RData files; ex_0_merged.RData and ex_0_refactored.RData. Both data files are intemediary data produced prior to creation of the final cleaned data set used in analyses.
+        * ex_0_merged: contains two data.frames, data and demo_data;
+            * data: the raw data merged into one data.frame. This is restricted to test performance only and does not contain any demographic data. This contains most of the same columns from the raw data with the same meanings behind the column names and data types. However, here the transcriptions have been reduced to only those provided from "glenn" and "vera", who take the primary coder and secondary coder labels. The most recent transcriptions from each has been taken (i.e. allowing for correction of erroneous submissions) and the transcription, transcribed word length, whether or not the transcribed word was correct, and the nLED for the transcribed word and target are provided. These columns take the form of primary_coder/secondary_coder appended to _response, _response_length, _correct, and _nLED respectively. Note that not all columns are in the correct data types at this stage (e.g. nLED columns are characters).
+            * demo_data: demographics for participants that took part in the experiment. Here all columns are as described in the raw data section.
+        * ex_0_refactored: contains two data.frames, data and demo_data;
+            * data: contains the same data as in the ex_0_merged data.frame, data, but has all columns with their correct data type. Additionally includes the columns prefixed with lenient_ and stringent_. These provide the "lenient" and "stringent" coding schemes, taking either the the most forgiving transcription (i.e. lowest nLED; when nLED matches, the fewest number of letters) of the primary and secondary coder's transcriptions, or the harshest transcription (i.e. highest nLED; when nLED matches, the highest number of letters). lenient/stringent_max_word_length provides maximum number of letters between the target and transcription, _nLED gives the nLED, and _correct states whether or not a transcribed response was correct. Both nLED and correct data types have the same interpretation as before. 
+                * submission_time: determines the time between trials in seconds; class Duration in the R-package lubridate.
+                * running_time: determines the time from starting the experiment and submitting an individual trial; class Duration in the R-package lubridate.
+            * demo_data: contains the same columns and data as with the ex_0_merged demo_data, but with all columns using the correct data type.
+    
+    * *03_cleaned-data*: contains 3 .RData files: ex_0_cleaned.RData, ex_0_filtered.RData, and ex_0_filtered_subsetted.RData.
 
 Please note that while the loading and saving of external files is executed using a relative file-path system, the ordering of files within each folder is necessary for the R scripts to run (i.e. do not move the data files from the data folder, or rename the folders and files). 
 

@@ -16,7 +16,9 @@ In all constructions each vowel is represented at least once in each vowel posit
 
 Phonemes are not repeated in any word.
 
-Two words witheld at random from each word structure during learning. All words seen during testing.
+Two words witheld at random from each word structure during learning (thus acting as novel words during testing). 
+
+All words seen during testing.
 
 
 
