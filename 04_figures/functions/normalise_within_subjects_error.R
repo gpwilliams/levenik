@@ -164,7 +164,8 @@ summariseWithin <- function(data,
   #   within-subjects groups.
 
   # calculate non-normed descriptive statistics from your data
-  uncorrectedSummary <- summariseBetween(data,
+  uncorrectedSummary <- summariseBetween(
+    data,
     subj_ID,
     groupingVariables =
       c(withinGroups, betweenGroups),
@@ -202,8 +203,10 @@ summariseWithin <- function(data,
   correctedSummary <- correctedSummary %>% select(-means)
 
   # generate Morey (2008) correction factor
-  nWithinGroups <- prod(vapply(correctedSummary[, withinGroups, drop = FALSE],
-    FUN = nlevels, FUN.VALUE = numeric(1)
+  nWithinGroups <- prod(vapply(
+    correctedSummary[, withinGroups, drop = FALSE],
+    FUN = function(x) length(unique(x)), 
+    FUN.VALUE = numeric(1)
   ))
   correctionFactor <- sqrt(nWithinGroups / (nWithinGroups - 1))
 
