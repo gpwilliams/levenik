@@ -52,7 +52,7 @@ experiments <- 0:3 # change to one number to run one experiment
 # define tests to run
 # to_run <- "all" 
 # alternative: to_run <- "main_planned_NHST", "all_NHST", "post-hoc", or "planned_Bayes"
-to_run <- "post-hoc"
+to_run <- "all"
 
 # makes sure data preparation only considers individual experiments
 run_three_expt_posthoc <- FALSE 
