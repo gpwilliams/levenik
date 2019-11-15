@@ -37,7 +37,7 @@ knitr::opts_chunk$set(cache.extra = knitr::rand_seed)
 
 ```{r load_data, include = FALSE}
 # folder containing results from each experiment
-source(here("05_paper", "99_run_all", "load_data.R"))
+source(here("05_paper", "01_manuscript", "00_load-data.R"))
 ```
 
 # Introduction

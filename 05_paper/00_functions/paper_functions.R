@@ -50,11 +50,11 @@ paste_mean_sd <- function(data, mean_col, sd_col, digits = 2) {
   )
 }
 
-summarise_icc <- function(icc_model, round = 2) {
+summarise_icc <- function(icc_model, round = 3) {
   # Produces a string summary of the model returned from
   # irr:icc(), using rounding with left padding on all values
   # Inputs: icc_model = Model produced using irr:icc()
-  #         round = 2 (default), numeric indicating by how many decimals 
+  #         round = 3 (default), numeric indicating by how many decimals 
   #                 to round. This also controls the padding of values.
   # Outputs: String summary of model
   icc_summary <- icc_model[c(

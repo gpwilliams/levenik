@@ -27,7 +27,12 @@ gender_count <- demo %>%
   count()
 
 english_proficiency <- demo %>% 
-  summarise(mean = mean(English), SD = sd(English))
+  summarise(
+    mean = mean(English), 
+    SD = sd(English),
+    min = min(English),
+    max = max(English)
+  )
 
 # overall performance
 overall_performance_descriptives <- data %>%

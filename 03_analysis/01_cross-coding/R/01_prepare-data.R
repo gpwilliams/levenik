@@ -26,3 +26,11 @@ data_subset <- data %>%
     primary_coder_response: secondary_coder_nLED
   ) %>%
   arrange(participant_number, task_trial_id)
+
+# summed scores needed for random subjects/raters models
+summed_data <- data_subset %>% 
+  group_by(participant_number) %>% 
+  summarise(
+    primary_coder_nLED_sum = sum(primary_coder_nLED, na.rm = TRUE),
+    secondary_coder_nLED_sum = sum(secondary_coder_nLED, na.rm = TRUE)
+  )

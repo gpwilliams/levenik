@@ -2,23 +2,12 @@
 
 # see: http://www.cookbook-r.com/Statistical_analysis/Inter-rater_reliability/
 
-# Cohen's kappa for categorical data (Fleiss' Kappa for > 2 raters)
-kappa_results <- kappa2(
-  data_subset %>% select(contains("correct")), 
-  "unweighted"
-)
-
 # intraclass correlation for nLED; automatically ignores NAs
-icc_results <- icc(
-  data_subset %>% select(contains("nLED")), 
+irr_results <- icc(
+  summed_data %>% select(contains("nLED")), 
   model = "twoway", 
-  type = "agreement"
-)
-
-# store in list
-irr_results <- list(
-  kappa_results = kappa_results,
-  icc_results = icc_results
+  type = "agreement",
+  unit = "single"
 )
 
 # save results
