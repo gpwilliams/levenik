@@ -54,10 +54,15 @@ data_subset <- data_subset %>%
       "Reading" = "R",
       "Spelling" = "W"
       ),
+    language_variety = fct_relevel(
+      language_variety,
+      "standard", 
+      "dialect"
+    ),
     language_variety = fct_recode(
       language_variety,
-      "Variety Match" = "dialect",
-      "Variety Mismatch" = "standard"
+      "Variety Match" = "standard",
+      "Variety Mismatch" = "dialect"
       ),
     dialect_words = fct_relevel(
       dialect_words,
