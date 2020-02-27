@@ -6,44 +6,30 @@ data_summaries <- list()
 
 # counts for all words
 all_error_by_subj <- data_subset %>% 
-  mutate(lenient_dialect_pronunciation = ifelse(lenient_dialect_pronunciation == "Dialect Word", 1, 0)) %>% 
+  group_by(participant_number, task, language_variety, dialect_words, lenient_coder_error_types) %>% 
+  summarise(counts = length(lenient_coder_error_types)) %>% 
+  ungroup() %>% 
   group_by(participant_number, task, language_variety, dialect_words) %>% 
-  summarise(dialect_errors = sum(lenient_dialect_pronunciation), N = length(lenient_dialect_pronunciation))
+  mutate(n = sum(counts), prop = counts/n)
 
-# get summary of errors by participant
-data_summaries$all_error_averages_by_subj <- all_error_by_subj %>% 
-  group_by(task, language_variety, dialect_words) %>% 
+# averages
+data_summaries$mean_proportions <- all_error_by_subj %>% 
+  group_by(task, language_variety, dialect_words, lenient_coder_error_types) %>% 
   summarise(
-    total = sum(dialect_errors),
-    n_obs = sum(N),
-    n_subj = length(dialect_errors),
-    total_prop = total/n_obs,
-    mean_prop = mean(dialect_errors/N), 
-    sd_prop = sd(dialect_errors/N),
-    se_prop = sd(dialect_errors/N)/sqrt(length(dialect_errors/N))
+    n_subj = length(counts),
+    mean_prop = mean(prop), 
+    sd_prop = sd(prop),
+    se_prop = sd(prop)/sqrt(n_subj),
+    ci = qt(0.975, df = n_subj-1)*sd_prop/sqrt(n_subj)
   )
 
-# counts for only incorrect words ----
-
-# count numbers per participant
-error_by_subj <- data_subset %>% 
-  filter(lenient_correct == 0) %>% 
-  mutate(lenient_dialect_pronunciation = ifelse(lenient_dialect_pronunciation == "Dialect Word", 1, 0)) %>% 
-  group_by(participant_number, task, language_variety, dialect_words) %>% 
-  summarise(dialect_errors = sum(lenient_dialect_pronunciation), N = length(lenient_dialect_pronunciation))
-
-# get summary of errors by participant
-data_summaries$error_averages_by_subj <- error_by_subj %>% 
+# grand proportions, looking all subjects and trials
+data_summaries$grand_proportions <- data_subset %>% 
+  group_by(task, language_variety, dialect_words, lenient_coder_error_types) %>% 
+  summarise(counts = length(lenient_coder_error_types), n_subj = length(unique(participant_number))) %>% 
+  ungroup() %>% 
   group_by(task, language_variety, dialect_words) %>% 
-  summarise(
-    total = sum(dialect_errors),
-    n_obs = sum(N),
-    n_subj = length(dialect_errors),
-    total_prop = total/n_obs,
-    mean_prop = mean(dialect_errors/N), 
-    sd_prop = sd(dialect_errors/N),
-    se_prop = sd(dialect_errors/N)/sqrt(length(dialect_errors/N))
-  )
+  mutate(n = sum(counts), proportion = counts/n)
 
 # save results
 names(data_summaries) %>%

@@ -23,7 +23,6 @@ experiments <- 0:3 # define experiments to analyse
 for (i in seq_along(experiments)) {
   # get experiment ID for subsetting/testing
   experiment <- experiments[i]
-  message(paste("Running Analyses for Experiment", experiment))
   
   # load data
   if (experiment == 0) {
@@ -65,6 +64,7 @@ for (i in seq_along(experiments)) {
   }
   
   # run cross coding analysis and save output
+  message(paste("Running Analyses for Experiment", experiment))
   source(data_prep_path)
   source(analysis_path)
   source(plots_path)

@@ -1,3 +1,7 @@
+# TODO
+
+# numbers in column counts need to be bigger and higher contras
+
 # plotting aesthetics ----
 
 # shared
@@ -14,43 +18,47 @@ custom_theme <- theme_bw() +
     axis.title = element_text(size = axis_y_size),
     axis.text.y = element_text(size = axis_y_size),
     axis.text.x = element_text(size = axis_x_size),
-    strip.text = element_text(size = axis_y_size)
+    strip.text = element_text(size = axis_y_size),
+    legend.title = element_blank(),
+    legend.position = "top",
+    legend.text = element_text(size = 14)
   )
 
 # plots ----
 
-# plot the average proportion of dialect errors vs. other errors
-prop_plot <- ggplot(
-  data_summaries$error_averages_by_subj %>% 
-    mutate(interacting_factors = interaction(task, language_variety, sep = ": ")), 
-  aes(x = dialect_words, y = mean_prop)
-) +
-  facet_wrap(interacting_factors ~.) +
-  geom_bar(stat = "identity") +
-  geom_errorbar(
-    aes(ymin = mean_prop - se_prop, ymax = mean_prop + se_prop), 
-    width = 0.25
+grand_prop_plot <- ggplot(
+  data_summaries$grand_proportions %>% 
+    mutate(interacting_factors = interaction(task, language_variety, sep = ": ")),
+  aes(x = dialect_words, y = proportion, fill = lenient_coder_error_types)
   ) +
-  scale_y_continuous(breaks = seq(0, 0.2, by = 0.02)) +
-  coord_cartesian(ylim = c(0, 0.18)) +
-  labs(x = "Word Type", y = "Proportion of Dialect Word Errors vs. All Others") +
+  facet_wrap(interacting_factors ~.) +
+  geom_bar(stat = "identity", position = "stack") +
+  scale_y_continuous(breaks = seq(0, 1, by = 0.2)) +
+  labs(x = "Word Type", y = "Proportion of Responses by Response Type") +
+  scale_fill_brewer(palette = "Accent") +
   custom_theme
 
-# plot the count of dialect errors 
-count_plot <- ggplot(
-  data_summaries$error_averages_by_subj %>% 
+
+# plot the average proportion of dialect errors vs. other errors
+prop_plot <- ggplot(
+  data_summaries$mean_proportions %>% 
     mutate(interacting_factors = interaction(task, language_variety, sep = ": ")), 
-  aes(x = dialect_words, y = total)
+  aes(x = dialect_words, y = mean_prop, fill = lenient_coder_error_types)
 ) +
-  facet_wrap(task ~ language_variety) +
-  geom_bar(stat = "identity") +
-  labs(x = "Word Type", y = "Count of Dialect Word Errors") +
-  stat_summary(
-    fun.y = function(x) {sum(x)/2}, 
-    geom = "text", 
-    aes(label = paste0(total, "/", n_obs), vjust = 0)
+  facet_wrap(interacting_factors ~.) +
+  geom_bar(stat = "identity", position = "dodge", width = 0.9) +
+  geom_errorbar(
+    aes(ymin = mean_prop - se_prop, ymax = mean_prop + se_prop), 
+    position = position_dodge(width = 0.9), 
+    width = 0.25
   ) +
-  custom_theme
+  scale_y_continuous(breaks = seq(0, 1, by = 0.2)) +
+  coord_cartesian(ylim = c(0, 1)) +
+  labs(x = "Word Type", y = "Mean Proportion of Responses by Response Type") +
+  scale_fill_brewer(palette = "Accent") +
+  custom_theme +
+  labs(caption = "Error bars represent 1 standard error of the mean") +
+  theme(plot.caption = element_text(size = 14))
 
 ggsave(
   filename = here(
@@ -58,9 +66,9 @@ ggsave(
     "05_exploratory-analysis", 
     "output",
     "plots",
-    paste0("experiment_", experiment, "_proportion-dialect-error.png")
+    paste0("experiment_", experiment, "_grand-proportions-responses.png")
   ),
-  plot = prop_plot,
+  plot = grand_prop_plot,
   height = 14, width = 12
 )
 
@@ -70,8 +78,8 @@ ggsave(
     "05_exploratory-analysis", 
     "output",
     "plots",
-    paste0("experiment_", experiment, "_count-dialect-error.png")
+    paste0("experiment_", experiment, "_mean-proportions-responses.png")
   ),
-  plot = count_plot,
+  plot = prop_plot,
   height = 14, width = 12
 )

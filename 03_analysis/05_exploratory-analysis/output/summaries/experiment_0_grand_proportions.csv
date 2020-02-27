@@ -1,0 +1,27 @@
+task,language_variety,dialect_words,lenient_coder_error_types,counts,n_subj,n,proportion
+Reading,Variety Match,Non-contrastive,Correct,268,41,836,0.32057416267942584
+Reading,Variety Match,Non-contrastive,Dialect Word Mismatch,10,8,836,0.011961722488038277
+Reading,Variety Match,Non-contrastive,Standard Word Mismatch,25,16,836,0.029904306220095694
+Reading,Variety Match,Non-contrastive,Other Mismatch,533,56,836,0.6375598086124402
+Reading,Variety Match,Contrastive,Correct,247,40,835,0.2958083832335329
+Reading,Variety Match,Contrastive,Dialect Word Match,22,13,835,0.026347305389221556
+Reading,Variety Match,Contrastive,Dialect Word Mismatch,4,4,835,0.004790419161676647
+Reading,Variety Match,Contrastive,Standard Word Mismatch,26,15,835,0.031137724550898204
+Reading,Variety Match,Contrastive,Other Mismatch,536,56,835,0.6419161676646706
+Reading,Variety Match,Untrained,Correct,178,32,669,0.26606875934230195
+Reading,Variety Match,Untrained,Dialect Word Mismatch,3,2,669,0.004484304932735426
+Reading,Variety Match,Untrained,Standard Word Mismatch,20,9,669,0.029895366218236172
+Reading,Variety Match,Untrained,Other Mismatch,468,55,669,0.6995515695067265
+Reading,Variety Mismatch,Non-contrastive,Correct,301,51,839,0.35876042908224076
+Reading,Variety Mismatch,Non-contrastive,Dialect Word Mismatch,20,12,839,0.023837902264600714
+Reading,Variety Mismatch,Non-contrastive,Standard Word Mismatch,28,11,839,0.033373063170441
+Reading,Variety Mismatch,Non-contrastive,Other Mismatch,490,56,839,0.5840286054827175
+Reading,Variety Mismatch,Contrastive,Correct,239,43,840,0.2845238095238095
+Reading,Variety Mismatch,Contrastive,Dialect Word Match,46,18,840,0.05476190476190476
+Reading,Variety Mismatch,Contrastive,Dialect Word Mismatch,12,4,840,0.014285714285714285
+Reading,Variety Mismatch,Contrastive,Standard Word Mismatch,27,13,840,0.03214285714285714
+Reading,Variety Mismatch,Contrastive,Other Mismatch,516,56,840,0.6142857142857143
+Reading,Variety Mismatch,Untrained,Correct,194,35,671,0.28912071535022354
+Reading,Variety Mismatch,Untrained,Dialect Word Mismatch,7,2,671,0.010432190760059613
+Reading,Variety Mismatch,Untrained,Standard Word Mismatch,19,9,671,0.028315946348733235
+Reading,Variety Mismatch,Untrained,Other Mismatch,451,56,671,0.6721311475409836
