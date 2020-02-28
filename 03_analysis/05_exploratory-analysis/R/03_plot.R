@@ -1,7 +1,3 @@
-# TODO
-
-# numbers in column counts need to be bigger and higher contras
-
 # plotting aesthetics ----
 
 # shared
@@ -27,37 +23,45 @@ custom_theme <- theme_bw() +
 # plots ----
 
 grand_prop_plot <- ggplot(
-  data_summaries$grand_proportions %>% 
-    mutate(interacting_factors = interaction(task, language_variety, sep = ": ")),
+  data_summaries$grand_proportions,
   aes(x = dialect_words, y = proportion, fill = lenient_coder_error_types)
   ) +
   facet_wrap(interacting_factors ~.) +
-  geom_bar(stat = "identity", position = "stack") +
+  geom_bar(stat = "identity", position = "stack", colour = "black") +
   scale_y_continuous(breaks = seq(0, 1, by = 0.2)) +
   labs(x = "Word Type", y = "Proportion of Responses by Response Type") +
-  scale_fill_brewer(palette = "Accent") +
+  scale_fill_manual(values = c("white", "grey80", "grey55", "grey30", "black")) +
   custom_theme
 
 
 # plot the average proportion of dialect errors vs. other errors
 prop_plot <- ggplot(
-  data_summaries$mean_proportions %>% 
-    mutate(interacting_factors = interaction(task, language_variety, sep = ": ")), 
+  data_summaries$mean_proportions, 
   aes(x = dialect_words, y = mean_prop, fill = lenient_coder_error_types)
-) +
+  ) +
   facet_wrap(interacting_factors ~.) +
-  geom_bar(stat = "identity", position = "dodge", width = 0.9) +
+  geom_bar(stat = "identity", position = "dodge", colour = "black", width = 0.9) +
+  geom_errorbar(
+    aes(ymin = mean_prop - se_prop, ymax = mean_prop + se_prop), 
+    position = position_dodge(width = 0.90), 
+    width = 0.25,
+    colour = "white",
+    size = 1.25
+  ) +
   geom_errorbar(
     aes(ymin = mean_prop - se_prop, ymax = mean_prop + se_prop), 
     position = position_dodge(width = 0.9), 
-    width = 0.25
+    width = 0.20
   ) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.2)) +
   coord_cartesian(ylim = c(0, 1)) +
   labs(x = "Word Type", y = "Mean Proportion of Responses by Response Type") +
-  scale_fill_brewer(palette = "Accent") +
+  scale_fill_manual(values = c("white", "grey80", "grey55", "grey30", "black")) +
   custom_theme +
-  labs(caption = "Error bars represent 1 standard error of the mean") +
+  labs(caption = paste(
+    "Error bars represent 1 standard error of the mean.",
+    "Error bars omitted for means of tied proportions."
+  )) +
   theme(plot.caption = element_text(size = 14))
 
 ggsave(

@@ -68,7 +68,8 @@ data_subset <- data %>%
         dialect_contrastive_response == primary_coder_response ~ 
         "dialect_word_match",
         primary_coder_correct == 0 & 
-        primary_coder_response %in% unique(na.omit(dialect_contrastive_response))  ~ 
+        primary_coder_response %in% 
+        unique(na.omit(dialect_contrastive_response))  ~ 
         "dialect_word_mismatch",
       key_target == target &
         primary_coder_correct == 0 &
@@ -85,7 +86,8 @@ data_subset <- data %>%
         dialect_contrastive_response == secondary_coder_response ~ 
         "dialect_word_match",
       secondary_coder_correct == 0 & 
-        secondary_coder_response %in% unique(na.omit(dialect_contrastive_response))  ~ 
+        secondary_coder_response %in% 
+        unique(na.omit(dialect_contrastive_response))  ~ 
         "dialect_word_mismatch",
       key_target == target &
         secondary_coder_correct == 0 &
@@ -97,11 +99,21 @@ data_subset <- data %>%
       secondary_coder_correct == 1 ~ "correct"
     ),
     lenient_coder_error_types = case_when(
-      primary_coder_error_types == "correct" | secondary_coder_error_types == "correct" ~ "correct",
-      primary_coder_error_types == "dialect_word_match" | secondary_coder_error_types == "dialect_word_match" ~ "dialect_word_match",
-      primary_coder_error_types == "dialect_word_mismatch" | secondary_coder_error_types == "dialect_word_mismatch" ~ "dialect_word_mismatch",
-      primary_coder_error_types == "standard_word_mismatch" | secondary_coder_error_types == "standard_word_mismatch" ~ "standard_word_mismatch",
-      primary_coder_error_types == "other_mismatch" | secondary_coder_error_types == "other_mismatch" ~ "other_mismatch",
+      primary_coder_error_types == "correct" | 
+        secondary_coder_error_types == "correct" ~ 
+        "correct",
+      primary_coder_error_types == "dialect_word_match" | 
+        secondary_coder_error_types == "dialect_word_match" ~ 
+        "dialect_word_match",
+      primary_coder_error_types == "dialect_word_mismatch" | 
+        secondary_coder_error_types == "dialect_word_mismatch" ~ 
+        "dialect_word_mismatch",
+      primary_coder_error_types == "standard_word_mismatch" | 
+        secondary_coder_error_types == "standard_word_mismatch" ~ 
+        "standard_word_mismatch",
+      primary_coder_error_types == "other_mismatch" | 
+        secondary_coder_error_types == "other_mismatch" ~ 
+        "other_mismatch",
     )
   )
 
@@ -150,5 +162,17 @@ data_subset <- data_subset %>%
       "Dialect Word Mismatch" = "dialect_word_mismatch",
       "Standard Word Mismatch" = "standard_word_mismatch", 
       "Other Mismatch" = "other_mismatch"
+    ),
+    interacting_factors = interaction(
+      task, 
+      language_variety, 
+      sep = ": "
+    ), # for shared labels
+    interacting_factors = fct_relevel(
+      interacting_factors,
+      "Reading: Variety Match", 
+      "Reading: Variety Mismatch", 
+      "Spelling: Variety Match",
+      "Spelling: Variety Mismatch"
     )
   )
