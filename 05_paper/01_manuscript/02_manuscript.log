@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.19)  18 OCT 2019 14:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6730 64-bit) (preloaded format=pdflatex 2018.7.19)  15 NOV 2019 16:02
 entering extended mode
 **./02_manuscript.tex
 (02_manuscript.tex
@@ -1239,11 +1239,11 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 16694 strings out of 492973
- 255840 string characters out of 3135903
+ 16692 strings out of 492973
+ 255818 string characters out of 3135903
  383465 words of memory out of 3000000
  19784 multiletter control sequences out of 15000+200000
- 123440 words of font info for 201 fonts, out of 3000000 for 9000
+ 123310 words of font info for 200 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,12n,47p,3273b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files/MiKTeX 2.9/fonts/enc/dvips/lm/lm-ts1.enc}{C:/Program Files/
@@ -1264,7 +1264,7 @@ blic/lm/lmr6.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmr8.pfb><C
 TeX 2.9/fonts/type1/public/lm/lmri10.pfb><C:/Program Files/MiKTeX 2.9/fonts/typ
 e1/public/lm/lmri9.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy1
 0.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/public/lm/lmsy8.pfb>
-Output written on 02_manuscript.pdf (60 pages, 3119254 bytes).
+Output written on 02_manuscript.pdf (60 pages, 3119587 bytes).
 PDF statistics:
  957 PDF objects out of 1000 (max. 8388607)
  298 named destinations out of 1000 (max. 500000)
