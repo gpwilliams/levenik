@@ -5,6 +5,7 @@
 data_summaries <- list()
 
 # counts for all words
+# report all cases with complete (makes props sum to 1 in summaries)
 all_error_by_subj <- data_subset %>% 
   group_by(
     participant_number, 
@@ -15,6 +16,7 @@ all_error_by_subj <- data_subset %>%
     lenient_coder_error_types
   ) %>% 
   summarise(counts = length(lenient_coder_error_types)) %>% 
+  complete(lenient_coder_error_types, fill = list(counts = 0)) %>% 
   ungroup() %>% 
   group_by(
     participant_number, 
@@ -62,7 +64,16 @@ data_summaries$grand_proportions <- data_subset %>%
     dialect_words,
     interacting_factors
   ) %>% 
-  mutate(n = sum(counts), proportion = counts/n)
+  mutate(n = sum(counts), proportion = counts/n) %>% 
+  complete(
+    lenient_coder_error_types, 
+    fill = list(
+      counts = 0, 
+      n_subj = 0, 
+      n = 0, 
+      proportion = 0
+    )
+  )
 
 # save results
 names(data_summaries) %>%

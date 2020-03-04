@@ -1,50 +1,61 @@
 task,language_variety,dialect_words,interacting_factors,lenient_coder_error_types,n_subj,mean_prop,sd_prop,se_prop,ci
-Reading,Variety Match,Non-contrastive,Reading: Variety Match,Correct,72,0.47433862433862434,0.2391185996028497,0.028180397214500986,0.056190116129109575
-Reading,Variety Match,Non-contrastive,Reading: Variety Match,Dialect Word Mismatch,12,0.07222222222222222,0.01924500897298753,0.005555555555555556,0.01222769533384244
-Reading,Variety Match,Non-contrastive,Reading: Variety Match,Standard Word Mismatch,37,0.13153153153153152,0.08532651374151305,0.014027592449401396,0.028449276094829643
+Reading,Variety Match,Non-contrastive,Reading: Variety Match,Correct,80,0.4269047619047619,0.2681298658496154,0.02997783034188197,0.059669378706242095
+Reading,Variety Match,Non-contrastive,Reading: Variety Match,Dialect Word Match,80,0,0,0,0
+Reading,Variety Match,Non-contrastive,Reading: Variety Match,Dialect Word Mismatch,80,0.010833333333333334,0.026926476964950718,0.003010471644410603,0.005992193917508922
+Reading,Variety Match,Non-contrastive,Reading: Variety Match,Standard Word Mismatch,80,0.060833333333333336,0.08759563790846388,0.009793490044789138,0.019493454318537204
 Reading,Variety Match,Non-contrastive,Reading: Variety Match,Other Mismatch,80,0.5014285714285714,0.2818509144929578,0.03151189021633673,0.06272284850585615
-Reading,Variety Match,Contrastive,Reading: Variety Match,Correct,68,0.43564425770308124,0.26214758097935426,0.03179006370229521,0.06345323272477757
-Reading,Variety Match,Contrastive,Reading: Variety Match,Dialect Word Match,22,0.08809523809523809,0.03774641889077496,0.008047563547372169,0.01673582456944096
-Reading,Variety Match,Contrastive,Reading: Variety Match,Dialect Word Mismatch,4,0.06666666666666667,0,0,0
-Reading,Variety Match,Contrastive,Reading: Variety Match,Standard Word Mismatch,47,0.11357649442755825,0.07338237936256378,0.010703920141815638,0.021545873744645727
-Reading,Variety Match,Contrastive,Reading: Variety Match,Other Mismatch,78,0.5491452991452992,0.28778521126063417,0.032585258547686666,0.06488553930794802
-Reading,Variety Match,Untrained,Reading: Variety Match,Correct,48,0.5224116161616161,0.30379480583553053,0.043849003231888416,0.08821281628825735
-Reading,Variety Match,Untrained,Reading: Variety Match,Dialect Word Mismatch,1,0.08333333333333333,NaN,NA,NaN
-Reading,Variety Match,Untrained,Reading: Variety Match,Standard Word Mismatch,13,0.1649184149184149,0.17718620671343838,0.04914261181617413,0.10707255310843655
-Reading,Variety Match,Untrained,Reading: Variety Match,Other Mismatch,76,0.6933811802232854,0.3088617532496749,0.03542887289316125,0.07057793400433818
-Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Correct,76,0.5085116637748217,0.2542647996440674,0.029166172803897533,0.058101995666645874
-Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Dialect Word Mismatch,14,0.07142857142857142,0.01781741612749495,0.0047619047619047615,0.010287469792679955
-Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Standard Word Mismatch,34,0.11596638655462185,0.07584592323870677,0.013007468524265545,0.026463893693709016
-Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Other Mismatch,79,0.4608893216488153,0.2705717192502182,0.030441696766117354,0.06060476277647905
-Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Correct,67,0.4657427149964463,0.2746451754189974,0.03355324847607889,0.06699122204760499
-Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Dialect Word Match,40,0.16416666666666666,0.13699824275704603,0.021661324127646556,0.043814163628963884
-Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Dialect Word Mismatch,8,0.09166666666666667,0.04960158727618967,0.017536809360305043,0.041467964708936635
-Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Standard Word Mismatch,37,0.1045045045045045,0.06946095899730169,0.011419311316415342,0.023159436776150132
-Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Other Mismatch,78,0.4824175824175824,0.2752904830729976,0.031170509170212673,0.062068413391679934
-Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Correct,58,0.5887321490769767,0.31156732729266706,0.04091079434243779,0.08192245258288962
-Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Dialect Word Mismatch,5,0.16818181818181818,0.11655346731780077,0.052124295187180515,0.14472024423433225
-Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Standard Word Mismatch,10,0.11818181818181818,0.05988629841527935,0.01893771036288149,0.04284007714439015
-Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Other Mismatch,72,0.6087612233445566,0.3195443680821457,0.03765866492680924,0.07508924517273194
-Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Correct,51,0.4444444444444444,0.23272937709486308,0.032588631171418116,0.06545619209024275
-Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Dialect Word Mismatch,1,0.06666666666666667,NaN,NA,NaN
-Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Standard Word Mismatch,33,0.1313131313131313,0.07165668241469274,0.012473827308311583,0.02540835476486304
+Reading,Variety Match,Contrastive,Reading: Variety Match,Correct,80,0.37029761904761904,0.2877267319243074,0.03216882657633051,0.06403044762171362
+Reading,Variety Match,Contrastive,Reading: Variety Match,Dialect Word Match,80,0.024226190476190478,0.04410931931336584,0.0049315718212965196,0.009816048168464632
+Reading,Variety Match,Contrastive,Reading: Variety Match,Dialect Word Mismatch,80,0.003333333333333333,0.014621333853545011,0.0016347148209122798,0.0032538184589511543
+Reading,Variety Match,Contrastive,Reading: Variety Match,Standard Word Mismatch,80,0.06672619047619048,0.07938052642521745,0.00887501265882523,0.01766527081255373
+Reading,Variety Match,Contrastive,Reading: Variety Match,Other Mismatch,80,0.5354166666666667,0.29692961134387896,0.0331977397748753,0.06607844811406564
+Reading,Variety Match,Untrained,Reading: Variety Match,Correct,80,0.31344696969696967,0.3481894793182607,0.03892876724029441,0.07748577293744374
+Reading,Variety Match,Untrained,Reading: Variety Match,Dialect Word Match,80,0,0,0,0
+Reading,Variety Match,Untrained,Reading: Variety Match,Dialect Word Mismatch,80,0.0010416666666666667,0.009316949906249131,0.0010416666666666664,0.0020733856356563852
+Reading,Variety Match,Untrained,Reading: Variety Match,Standard Word Mismatch,80,0.026799242424242423,0.09228866087503945,0.010318185963450669,0.020537835420143948
+Reading,Variety Match,Untrained,Reading: Variety Match,Other Mismatch,80,0.6587121212121212,0.3371815994324185,0.0376980488546496,0.07503608926800298
+Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Correct,80,0.4830860805860806,0.271689830404992,0.030375846479047567,0.06046161001013834
+Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Dialect Word Match,80,0,0,0,0
+Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Dialect Word Mismatch,80,0.0125,0.028251930718285953,0.003158661879085093,0.006287159201270815
+Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Standard Word Mismatch,80,0.04928571428571429,0.07570330990537641,0.008463887353507744,0.016846946362153607
+Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Other Mismatch,80,0.4551282051282051,0.27374732042732863,0.03060588085669617,0.060919481985489174
+Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Correct,80,0.3900595238095238,0.30481482526327097,0.0340793334919197,0.06783321651349423
+Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Dialect Word Match,80,0.08208333333333333,0.12684018206474082,0.014181163468760504,0.028226899807702165
+Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Dialect Word Mismatch,80,0.009166666666666667,0.03136599428919234,0.003506824770625217,0.006980160101931178
+Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Standard Word Mismatch,80,0.04833333333333333,0.07034174165349256,0.007864445799646895,0.015653787795250604
+Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Other Mismatch,80,0.47035714285714286,0.28215379967233656,0.031545753808860114,0.0627902523007135
+Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Correct,80,0.4268308080808081,0.37419259551310236,0.041836004012219,0.08327248298130976
+Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Dialect Word Match,80,0,0,0,0
+Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Dialect Word Mismatch,80,0.010511363636363636,0.04864302434414326,0.005438455453234068,0.010824974800216948
+Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Standard Word Mismatch,80,0.014772727272727272,0.04422154558821106,0.004944119100267289,0.009841022902529827
+Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Other Mismatch,80,0.547885101010101,0.354321609969691,0.039614360289469804,0.07885041176630724
+Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Correct,80,0.2833333333333333,0.2837363725607348,0.031722690836750445,0.06314243664507531
+Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Dialect Word Match,80,0,0,0,0
+Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Dialect Word Mismatch,80,8.333333333333333e-4,0.007453559924999299,8.333333333333333e-4,0.001658708508525107
+Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Standard Word Mismatch,80,0.05416666666666667,0.07944515751157766,0.008882238633953281,0.017679653756266483
 Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Other Mismatch,80,0.6616666666666666,0.32187478237262723,0.03598669468140728,0.07162972399409456
-Spelling,Variety Match,Contrastive,Spelling: Variety Match,Correct,47,0.4056737588652482,0.21256646007450763,0.0310060048915056,0.06241185078618589
-Spelling,Variety Match,Contrastive,Spelling: Variety Match,Dialect Word Mismatch,19,0.11228070175438597,0.08903496768733686,0.02042602245213214,0.042913480764142704
-Spelling,Variety Match,Contrastive,Spelling: Variety Match,Standard Word Mismatch,38,0.17192982456140352,0.08854048997907202,0.014363164112019105,0.02910253486902329
-Spelling,Variety Match,Contrastive,Spelling: Variety Match,Other Mismatch,78,0.67008547008547,0.33062055185657974,0.03743540578834175,0.0745434163191833
-Spelling,Variety Match,Untrained,Spelling: Variety Match,Correct,45,0.45925925925925926,0.2727190889157464,0.04065456143849456,0.08193388487637375
-Spelling,Variety Match,Untrained,Spelling: Variety Match,Dialect Word Mismatch,1,0.08333333333333333,NaN,NA,NaN
-Spelling,Variety Match,Untrained,Spelling: Variety Match,Standard Word Mismatch,1,0.08333333333333333,NaN,NA,NaN
+Spelling,Variety Match,Contrastive,Spelling: Variety Match,Correct,80,0.23833333333333334,0.2582588023696511,0.028874211894311174,0.05747268113526097
+Spelling,Variety Match,Contrastive,Spelling: Variety Match,Dialect Word Match,80,0,0,0,0
+Spelling,Variety Match,Contrastive,Spelling: Variety Match,Dialect Word Mismatch,80,0.026666666666666665,0.06417276260155556,0.007174732974051727,0.014280948756546289
+Spelling,Variety Match,Contrastive,Spelling: Variety Match,Standard Word Mismatch,80,0.08166666666666667,0.10552927350648869,0.011798531458833824,0.02348438942264255
+Spelling,Variety Match,Contrastive,Spelling: Variety Match,Other Mismatch,80,0.6533333333333333,0.3429662943258428,0.03834479740518923,0.07632341005639061
+Spelling,Variety Match,Untrained,Spelling: Variety Match,Correct,80,0.25833333333333336,0.3065735503466531,0.03427596493392854,0.06822460160857856
+Spelling,Variety Match,Untrained,Spelling: Variety Match,Dialect Word Match,80,0,0,0,0
+Spelling,Variety Match,Untrained,Spelling: Variety Match,Dialect Word Mismatch,80,0.0010416666666666667,0.009316949906249133,0.0010416666666666664,0.0020733856356563857
+Spelling,Variety Match,Untrained,Spelling: Variety Match,Standard Word Mismatch,80,0.0010416666666666667,0.009316949906249128,0.0010416666666666664,0.0020733856356563844
 Spelling,Variety Match,Untrained,Spelling: Variety Match,Other Mismatch,80,0.7395833333333334,0.3073682009747659,0.03436480957506969,0.06840144244321578
-Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Correct,63,0.47513227513227513,0.24582304545400435,0.03097079260951536,0.06190973228636905
-Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Dialect Word Mismatch,5,0.08,0.0298142396999972,0.013333333333333332,0.03701926806930391
-Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Standard Word Mismatch,45,0.13185185185185186,0.06740333728045822,0.010047896271296694,0.02025020433654575
-Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Other Mismatch,79,0.5535864978902953,0.34049644171988463,0.03830884268874052,0.07626704717644725
-Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Correct,61,0.4710382513661202,0.2156364747745326,0.027609421429859775,0.05522706555322235
-Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Dialect Word Mismatch,21,0.09206349206349207,0.04460289216427552,0.009733149026511678,0.020302993096094703
-Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Standard Word Mismatch,47,0.17163120567375886,0.08763635983667376,0.012783076882482843,0.02573099919739841
-Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Other Mismatch,77,0.5359307359307359,0.3405261766894121,0.038806559395121905,0.07728996142181314
-Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Correct,58,0.5488505747126436,0.2801221897993579,0.03678184550740785,0.07365437515756232
-Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Standard Word Mismatch,3,0.08333333333333333,0,0,0
-Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Other Mismatch,79,0.6065400843881856,0.33491523911243026,0.03768090833611416,0.07501692591111488
+Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Correct,80,0.37416666666666665,0.2927139125479965,0.03272641032086244,0.06514029030323809
+Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Dialect Word Match,80,0,0,0,0
+Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Dialect Word Mismatch,80,0.005,0.020609557680645214,0.0023042185980062806,0.004586432392817772
+Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Standard Word Mismatch,80,0.07416666666666667,0.08284243597524302,0.009262065913115871,0.018435681043926795
+Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Other Mismatch,80,0.5466666666666666,0.34394910165434756,0.038454678604955314,0.07654212311356534
+Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Correct,80,0.35916666666666663,0.27568990305080665,0.03082306819659651,0.061351782571853114
+Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Dialect Word Match,80,0,0,0,0
+Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Dialect Word Mismatch,80,0.024166666666666666,0.046532356451245455,0.005202475608911788,0.010355268669475578
+Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Standard Word Mismatch,80,0.10083333333333333,0.10817173926589482,0.012093968112146195,0.024072441371337874
+Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Other Mismatch,80,0.5158333333333334,0.3493604766083791,0.039059688717403035,0.07774636561907826
+Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Correct,80,0.3979166666666667,0.34268911540514235,0.03831380785975843,0.07626172690917292
+Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Dialect Word Match,80,0,0,0,0
+Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Dialect Word Mismatch,80,0,0,0,0
+Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Standard Word Mismatch,80,0.0031249999999999997,0.015931849850612065,0.0017812349636644206,0.0035454595078951044
+Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Other Mismatch,80,0.5989583333333334,0.3396277410067118,0.03797153579678502,0.07558045140947159

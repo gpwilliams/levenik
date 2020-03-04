@@ -1,5 +1,6 @@
 task,language_variety,dialect_words,interacting_factors,lenient_coder_error_types,counts,n_subj,n,proportion
 Reading,Variety Match,Non-contrastive,Reading: Variety Match,Correct,512,72,1199,0.427022518765638
+Reading,Variety Match,Non-contrastive,Reading: Variety Match,Dialect Word Match,0,0,0,0
 Reading,Variety Match,Non-contrastive,Reading: Variety Match,Dialect Word Mismatch,13,12,1199,0.010842368640533779
 Reading,Variety Match,Non-contrastive,Reading: Variety Match,Standard Word Mismatch,73,37,1199,0.060884070058381985
 Reading,Variety Match,Non-contrastive,Reading: Variety Match,Other Mismatch,601,80,1199,0.5012510425354462
@@ -9,10 +10,12 @@ Reading,Variety Match,Contrastive,Reading: Variety Match,Dialect Word Mismatch,4
 Reading,Variety Match,Contrastive,Reading: Variety Match,Standard Word Mismatch,80,47,1199,0.06672226855713094
 Reading,Variety Match,Contrastive,Reading: Variety Match,Other Mismatch,642,78,1199,0.5354462051709759
 Reading,Variety Match,Untrained,Reading: Variety Match,Correct,300,48,957,0.31347962382445144
+Reading,Variety Match,Untrained,Reading: Variety Match,Dialect Word Match,0,0,0,0
 Reading,Variety Match,Untrained,Reading: Variety Match,Dialect Word Mismatch,1,1,957,0.0010449320794148381
 Reading,Variety Match,Untrained,Reading: Variety Match,Standard Word Mismatch,25,13,957,0.02612330198537095
 Reading,Variety Match,Untrained,Reading: Variety Match,Other Mismatch,631,76,957,0.6593521421107628
 Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Correct,577,76,1196,0.48244147157190637
+Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Dialect Word Match,0,0,0,0
 Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Dialect Word Mismatch,15,14,1196,0.01254180602006689
 Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Standard Word Mismatch,59,34,1196,0.04933110367892977
 Reading,Variety Mismatch,Non-contrastive,Reading: Variety Mismatch,Other Mismatch,545,79,1196,0.45568561872909696
@@ -22,29 +25,37 @@ Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Dialect Word Mism
 Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Standard Word Mismatch,58,37,1199,0.04837364470391994
 Reading,Variety Mismatch,Contrastive,Reading: Variety Mismatch,Other Mismatch,564,78,1199,0.47039199332777315
 Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Correct,408,58,955,0.4272251308900524
+Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Dialect Word Match,0,0,0,0
 Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Dialect Word Mismatch,10,5,955,0.010471204188481676
 Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Standard Word Mismatch,14,10,955,0.014659685863874346
 Reading,Variety Mismatch,Untrained,Reading: Variety Mismatch,Other Mismatch,523,72,955,0.5476439790575917
 Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Correct,340,51,1200,0.2833333333333333
+Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Dialect Word Match,0,0,0,0
 Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Dialect Word Mismatch,1,1,1200,8.333333333333334e-4
 Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Standard Word Mismatch,65,33,1200,0.05416666666666667
 Spelling,Variety Match,Non-contrastive,Spelling: Variety Match,Other Mismatch,794,80,1200,0.6616666666666666
 Spelling,Variety Match,Contrastive,Spelling: Variety Match,Correct,286,47,1200,0.23833333333333334
+Spelling,Variety Match,Contrastive,Spelling: Variety Match,Dialect Word Match,0,0,0,0
 Spelling,Variety Match,Contrastive,Spelling: Variety Match,Dialect Word Mismatch,32,19,1200,0.02666666666666667
 Spelling,Variety Match,Contrastive,Spelling: Variety Match,Standard Word Mismatch,98,38,1200,0.08166666666666667
 Spelling,Variety Match,Contrastive,Spelling: Variety Match,Other Mismatch,784,78,1200,0.6533333333333333
 Spelling,Variety Match,Untrained,Spelling: Variety Match,Correct,248,45,960,0.25833333333333336
+Spelling,Variety Match,Untrained,Spelling: Variety Match,Dialect Word Match,0,0,0,0
 Spelling,Variety Match,Untrained,Spelling: Variety Match,Dialect Word Mismatch,1,1,960,0.0010416666666666667
 Spelling,Variety Match,Untrained,Spelling: Variety Match,Standard Word Mismatch,1,1,960,0.0010416666666666667
 Spelling,Variety Match,Untrained,Spelling: Variety Match,Other Mismatch,710,80,960,0.7395833333333334
 Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Correct,449,63,1200,0.37416666666666665
+Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Dialect Word Match,0,0,0,0
 Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Dialect Word Mismatch,6,5,1200,0.005
 Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Standard Word Mismatch,89,45,1200,0.07416666666666667
 Spelling,Variety Mismatch,Non-contrastive,Spelling: Variety Mismatch,Other Mismatch,656,79,1200,0.5466666666666666
 Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Correct,431,61,1200,0.3591666666666667
+Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Dialect Word Match,0,0,0,0
 Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Dialect Word Mismatch,29,21,1200,0.024166666666666666
 Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Standard Word Mismatch,121,47,1200,0.10083333333333333
 Spelling,Variety Mismatch,Contrastive,Spelling: Variety Mismatch,Other Mismatch,619,77,1200,0.5158333333333334
 Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Correct,382,58,960,0.39791666666666664
+Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Dialect Word Match,0,0,0,0
+Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Dialect Word Mismatch,0,0,0,0
 Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Standard Word Mismatch,3,3,960,0.003125
 Spelling,Variety Mismatch,Untrained,Spelling: Variety Mismatch,Other Mismatch,575,79,960,0.5989583333333334

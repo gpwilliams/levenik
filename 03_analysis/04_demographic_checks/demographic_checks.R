@@ -11,7 +11,9 @@ source(here(
 
 # extract demographic data
 experiments <- 0:3 
-proficiencies <- list()
+english_proficiencies <- list()
+all_language_counts <- list()
+known_language_category <- list()
 
 for(i in seq_along(experiments)) {
   experiment <- experiments[i]
@@ -32,7 +34,7 @@ for(i in seq_along(experiments)) {
   
   # make demographic summary; count numbers reporting range on Likert
   # 1 being poor English, 5 being native-like English
-  proficiencies[[i]] <- demo_data %>% 
+  english_proficiencies[[i]] <- demo_data %>% 
     filter(language_spoken == "English") %>% 
     mutate(language_proficiency_rating = factor(
       language_proficiency_rating, levels = 1:5
@@ -40,15 +42,51 @@ for(i in seq_along(experiments)) {
     group_by(language_proficiency_rating, .drop = FALSE) %>% 
     count() %>% 
     mutate(experiment = experiment)
+  
+  # see distribution of languages spoken across all participants
+  all_language_counts[[i]] <- demo_data %>% 
+    group_by(language_spoken) %>% 
+    summarise(n = n()) %>% 
+    mutate(experiment = experiment)
+  
+  # check whether participants are monolingual or multilingual
+  known_language_category[[i]] <- demo_data %>% 
+    group_by(participant_number) %>% 
+    summarise(n = length(language_spoken)) %>% 
+    mutate(speaker_category = case_when(
+      n == 1 ~ "monolingual",
+      n > 1 ~ "multilingual"
+    )) %>% 
+    group_by(speaker_category) %>% 
+    summarise(n = n()) %>% 
+    mutate(experiment = experiment)
 }
 
 # bind the data together
-proficiencies <- bind_rows(proficiencies) %>% 
+english_proficiencies <- bind_rows(english_proficiencies) %>% 
+  select(experiment, everything())
+
+all_language_counts <- bind_rows(all_language_counts) %>% 
+  select(experiment, everything())
+
+known_language_category <- bind_rows(known_language_category) %>% 
   select(experiment, everything())
 
 # save as a csv
-write_csv(proficiencies, here(
+write_csv(english_proficiencies, here(
   "03_analysis", 
   "04_demographic_checks", 
   "english_proficiency_counts.csv"
+))
+
+write_csv(all_language_counts, here(
+  "03_analysis", 
+  "04_demographic_checks", 
+  "all_language_counts.csv"
+))
+
+write_csv(known_language_category, here(
+  "03_analysis", 
+  "04_demographic_checks", 
+  "known_language_category.csv"
 ))
