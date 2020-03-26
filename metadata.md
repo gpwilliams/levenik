@@ -1,6 +1,6 @@
 # Metadata
 
-Note that due to excessive file sizes associated with storing Bayesian analyses in lists (and subsequently in .RData files), the outputs of data analyses are not hosted on GitHub, but are instead hosted on the OSF only on completion of the project.
+Note that due to excessive file sizes associated with storing Bayesian analyses in lists (and subsequently in .RData files), the outputs of Bayesian data analyses are not hosted on GitHub. The folder structure is there to allow for these analyses to be conducted again to reproduce our results. Otherwise, please refer to the compressed version of the Bayesian analyses (in 03_analysis/02_main-analyses/04_output/06_all-results_compressed/).
 
 There are 5 folders for this analysis:
 

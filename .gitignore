@@ -7,12 +7,15 @@ desktop.ini
 
 01_materials/images/norms/input/forsythe-et-al/all_data.csv
 
-03_analysis/02_main-analyses/04_output/01_experiment-0/
-03_analysis/02_main-analyses/04_output/02_experiment-1/
-03_analysis/02_main-analyses/04_output/03_experiment-2/
-03_analysis/02_main-analyses/04_output/04_experiment-3/
-03_analysis/02_main-analyses/04_output/05_multiple-experiments/
+03_analysis/02_main-analyses/04_output/01_experiment-0/planned-comparisons_Bayes.RData
+03_analysis/02_main-analyses/04_output/02_experiment-1/planned-comparisons_Bayes.RData
+03_analysis/02_main-analyses/04_output/03_experiment-2/planned-comparisons_Bayes.RData
+03_analysis/02_main-analyses/04_output/04_experiment-3/planned-comparisons_Bayes.RData
 
 03_analysis/02_main-analyses/notes/
 
 /TODO.txt
+
+
+Icon?
+.DS_Store
