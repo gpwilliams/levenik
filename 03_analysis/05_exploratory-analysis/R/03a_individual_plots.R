@@ -1,41 +1,19 @@
-# plotting aesthetics ----
-
-# shared
-axis_y_size <- 20
-axis_x_size <- 17
-n_text_size <- 6
-
-custom_theme <- theme_bw() +
-  theme(
-    panel.grid.major.x = element_blank(),
-    panel.grid.minor.x = element_blank(),
-    strip.background = element_blank(),
-    panel.border = element_rect(colour = "black"),
-    axis.title = element_text(size = axis_y_size),
-    axis.text.y = element_text(size = axis_y_size),
-    axis.text.x = element_text(size = axis_x_size),
-    strip.text = element_text(size = axis_y_size),
-    legend.title = element_blank(),
-    legend.position = "top",
-    legend.text = element_text(size = 14)
-  )
-
 # plots ----
 
-grand_prop_plot <- ggplot(
+# plot grand proportions of errors (i.e. stacked bars)
+plots_out[[i]][["grand_prop"]] <- ggplot(
   data_summaries$grand_proportions,
   aes(x = dialect_words, y = proportion, fill = lenient_coder_error_types)
   ) +
   facet_wrap(interacting_factors ~.) +
   geom_bar(stat = "identity", position = "stack", colour = "black") +
   scale_y_continuous(breaks = seq(0, 1, by = 0.2)) +
-  labs(x = "Word Type", y = "Proportion of Responses by Response Type") +
-  scale_fill_manual(values = c("white", "grey80", "grey55", "grey30", "black")) +
+  labs(x = shared_x_axis_label, y = grand_prop_y_axis_label) +
+  scale_fill_manual(values = shared_manual_scale) +
   custom_theme
 
-
-# plot the average proportion of dialect errors vs. other errors
-prop_plot <- ggplot(
+# plot the average proportion of dialect errors vs. others (i.e. error bars)
+plots_out[[i]][["prop"]] <- ggplot(
   data_summaries$mean_proportions, 
   aes(x = dialect_words, y = mean_prop, fill = lenient_coder_error_types)
   ) +
@@ -55,14 +33,13 @@ prop_plot <- ggplot(
   ) +
   scale_y_continuous(breaks = seq(0, 1, by = 0.2)) +
   coord_cartesian(ylim = c(0, 1)) +
-  labs(x = "Word Type", y = "Mean Proportion of Responses by Response Type") +
-  scale_fill_manual(values = c("white", "grey80", "grey55", "grey30", "black")) +
+  labs(x = shared_x_axis_label, y = prop_y_axis_label) +
+  scale_fill_manual(values = shared_manual_scale) +
   custom_theme +
-  labs(caption = paste(
-    "Error bars represent 1 standard error of the mean.",
-    "Error bars omitted for means of tied proportions."
-  )) +
+  labs(errorbar_caption) +
   theme(plot.caption = element_text(size = 14))
+
+# save individual plots ----
 
 ggsave(
   filename = here(
@@ -72,7 +49,7 @@ ggsave(
     "plots",
     paste0("experiment_", experiment, "_grand-proportions-responses.png")
   ),
-  plot = grand_prop_plot,
+  plot = plots_out[[i]][["grand_prop"]],
   height = 14, width = 12
 )
 
@@ -84,6 +61,6 @@ ggsave(
     "plots",
     paste0("experiment_", experiment, "_mean-proportions-responses.png")
   ),
-  plot = prop_plot,
+  plot = plots_out[[i]][["prop"]],
   height = 14, width = 12
 )

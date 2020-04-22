@@ -1,6 +1,6 @@
-## List of words and their variants {#appendix-c}
+## {#appendix-c}
 
-```{r, results = "asis", warning = FALSE}
+```{r chunky, results = "asis", fig.pos='H', out.width="\\textwidth"}
 word_list_data <- readr::read_csv(
   here::here(
     "01_materials", 
@@ -18,16 +18,15 @@ kable(
   booktabs = TRUE, 
   caption = "Word list used in all experiments. Experiment 1, 2b, and 3 use the opaque spellings, while Experiment 2a uses the transparent spellings.", 
   col.names = c("Transaprent", "Opaque", "Non-Contrastive", "Contrastive"),
-  longtable = multipage_table,
+  longtable = TRUE, # needs this to print Appendix label above table
   escape = FALSE,
-  linesep = "" # avoids spacing every 5 rows
+  linesep = "", # avoids spacing every 5 rows
+  table.env = "table*" # 2 column tables
   ) %>%
 kable_styling(
-  latex_options = c("hold_position", "repeat_header"), 
+  latex_options = c("repeat_header"), 
   full_width = FALSE,
-  font_size = table_font_size
+  font_size = 11
 ) %>%
-add_header_above(
-  c("Spelling" = 2, "Pronunciation" = 2)
-)
+add_header_above(c("Spelling" = 2, "Pronunciation" = 2))
 ```

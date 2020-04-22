@@ -1,6 +1,6 @@
 ## Graphemes used to render phonemes in all experiments {#appendix-a}
 
-```{r, echo = FALSE, out.width="10%", out.height = "20%", fig.cap = "Invented graphemes used to represent each phoneme in all experiments. Note: The final two items were created but not used in this series of experiments.", fig.show = "hold", fig.align = "center", fig.pos = "htb", warning = FALSE}
+```{r, echo = FALSE, out.width="10%", out.height = "20%", fig.cap = "Invented graphemes used to represent each phoneme in all experiments. The final two graphemes were created but not used in these experiments. To prevent participants from memorizing the novel graphemes based on resemblance to known graphemes we controlled for similarity to characters of extant writing systems by comparing each invented grapheme against the database of 11,817 characters (excluding Chinese, Korean, and Japanese) on the Shapecatcher website (Milde, 2011). If visual inspection indicated a resemblance, we modified the grapheme to minimize that resemblance.", fig.show = "hold", fig.align = "center", fig.pos = "htb", warning = FALSE, fig.env="figure*"}
 # note: chunk names don't work if you tag your headings, e.g. {#appendix-a}
 # it then thinks chunk names are duplicates (even when they aren't)
 knitr::include_graphics(

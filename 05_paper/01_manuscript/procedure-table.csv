@@ -1,0 +1,23 @@
+﻿block,ex1_inconsistent,ex2_consistent,ex2b_inconsistent,ex3_inconsistent
+,exposure (1-30),exposure (1-30),exposure (1-30),exposure (1-30)
+,grapheme learning ,grapheme learning,grapheme learning,grapheme learning
+training ,reading (1-10),"reading1,2 (1-10)","reading1,2 (1-10)","reading1,2 (1-10)"
+block 1,reading (1-10),"spelling2,1 (1-10)","spelling2,1 (1-10)","spelling2,1 (1-10)"
+,exposure (1-30),exposure (1-30),exposure (1-30),exposure (1-30)
+training,reading (11-20),"reading1,2 (11-20)","reading1,2 (11-20)","reading1,2 (11-20)"
+block 2,reading (11-20),"spelling2,1 (11-20)","spelling2,1 (11-20)","spelling2,1 (11-20)"
+,exposure (1-30),exposure (1-30),exposure (1-30),exposure (1-30)
+training,reading (21-30),"reading1,2 (21-30)","reading1,2 (21-30)","reading1,2 (21-30)"
+block 3,reading (21-30),"spelling2,1 (21-30)","spelling2,1 (21-30)","spelling2,1 (21-30)"
+,,,,exposure3 (1-30)
+training,n/a,n/a,n/a,"reading1,2 (1-10)"
+block 4,,,,"spelling2,1 (1-10)"
+,,,,exposure (1-30)
+training,n/a,n/a,n/a,"reading1,2 (11-20)"
+block 5,,,,"spelling2,1 (11-20)"
+,,,,exposure (1-30)
+training,n/a,n/a,n/a,"reading1,2 (21-30)"
+block 6,,,,"spelling2,1 (21-30)"
+,,,,
+testing,reading (1-42),"reading1,2 (1-42)","reading1,2 (1-42)","reading1,2 (1-42)"
+,,"spelling2,1 (1-42)","spelling2,1 (1-42)","spelling2,1 (1-42)"

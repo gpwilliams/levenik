@@ -89,11 +89,12 @@ summarise_icc <- function(icc_model, round = 3) {
       p_value,
       ", ICC = ",
       value,
-      " [",
+      ", ",
       substr(conf.level, 3, 4), # make into %
-      "% CI = ",
+      "% CI = [",
       lbound, "; ",
-      ubound, "]"
+      ubound,
+      "]"
     )
   )
 }
@@ -145,6 +146,90 @@ summarise_bayes <- function(brms_summary, col, names){
     select(term:Est.Error, `95% CI`)
 }
 
+# format table summary
+kable_coefs <- function(
+  # formats a summary table of coefficients (or otherwise) in kable
+  # has a lot of sensible defaults...
+  data, 
+  caption = NULL,
+  colnames = NULL, 
+  general_footnote = NULL, 
+  alphabet_footnote = NULL,
+  headers_above_cols = NULL,
+  format_args = list(decimal.mark = ".", big.mark = ","), 
+  digits = 2,
+  font_size = 4.8,
+  bold_rows = TRUE,
+  bold_basis = "95% CI",
+  output_format = "latex", 
+  multipage_table = FALSE, 
+  align = NULL, 
+  span_columns = TRUE, 
+  long_table = TRUE,
+  footnote_as_chunk = FALSE,
+  hold_position = "hold_position"
+){
+  if(span_columns == TRUE){
+    table_env <- "table*" # tables that span 2 columns in jou mode
+  } else {
+    table_env <- "table"
+  }
+  
+  if(bold_rows == TRUE) {
+    # if bold selection was given, find rows to highlight
+    # based on selecting only those where CIs don't cross 0.
+    ci_cols <- which(str_detect(colnames(data), bold_basis))
+    counts <- list()
+    negative_signs <- numeric()
+    for(i in seq_along(ci_cols)) {
+      counts[[i]] <- (str_count(pull(data[, ci_cols[i]]), "-"))
+    }
+    total_cols <- length(counts)
+    negative_signs <- Reduce(`+`, counts) # add each element in list together
+    # highlight only CI rows with no negative signs, 
+    # or all negative signs (i.e. none crossing 0)
+    rows_to_bold <- which(negative_signs %in% c(0, total_cols*2)) 
+  } else{
+    rows_to_bold <- 0
+  }
+  
+  output <- kable(
+    data,
+    format = output_format,
+    booktabs = TRUE, 
+    caption = caption, 
+    format.args = format_args,
+    digits = digits,
+    col.names = colnames,
+    longtable = multipage_table,
+    escape = FALSE,
+    linesep = "", # avoids spacing every 5 rows
+    align = align,
+    table.env = table_env 
+  ) %>%
+    kable_styling(
+      latex_options = c(hold_position, "repeat_header", "scale_down"), 
+      full_width = FALSE,
+      font_size = font_size
+    ) %>%
+    footnote(
+      general = general_footnote,
+      general_title = "Note.", 
+      alphabet = alphabet_footnote,
+      alphabet_title = "",
+      footnote_as_chunk = footnote_as_chunk, 
+      escape = FALSE,
+      threeparttable = long_table
+    )
+  
+  if(!is.null(headers_above_cols)) {
+    output <- add_header_above(output, headers_above_cols)
+  } 
+  if(bold_rows == TRUE) {
+    output <- row_spec(output, row = rows_to_bold, bold = TRUE)
+  }
+  output # return output
+}
 # Data Tidying Functions ----
 
 make_confint <- function(merMod, confint_method = "Wald") {
@@ -377,4 +462,16 @@ papa <- function(num, ...) {
     ...,
     simplify = TRUE
   )
+}
+
+# logical functions ----
+
+`%nin%` <- function(x, table){
+  #' Logical operation for not in
+  #' @return logical outcome of not in operation.
+  #' @param x vector or NULL: the values to be matched. Long vectors are supported.
+  #' @param table vector or NULL: the values to be matched against. Long vectors are not supported.
+  #' @examples
+  #' c(1,3,11) %nin% 1:10
+  is.na(match(x, table, nomatch=NA_integer_))
 }
