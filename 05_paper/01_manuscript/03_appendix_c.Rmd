@@ -9,24 +9,34 @@ word_list_data <- readr::read_csv(
     "spelling_and_pronunciations.csv"
   )
 ) %>%
-  select(transparent_spelling:contrastive_pronunciation) %>%
-  replace_na(list(contrastive_pronunciation = ""))
+  replace_na(list(contrastive_pronunciation = "")) %>% 
+  arrange(desc(word_familiarity, contrastive_pronunciation)) %>% 
+  select(transparent_spelling:contrastive_pronunciation)
 
 kable(
   word_list_data,
   format = "latex",
   booktabs = TRUE, 
-  caption = "Word list used in all experiments. Experiment 1, 2b, and 3 use the opaque spellings, while Experiment 2a uses the transparent spellings.", 
-  col.names = c("Transaprent", "Opaque", "Non-Contrastive", "Contrastive"),
+  caption = "Word list used in all experiments.", 
+  col.names = c("Consistent", "Inconsistent", "Noncontrastive", "Contrastive"),
   longtable = TRUE, # needs this to print Appendix label above table
   escape = FALSE,
   linesep = "", # avoids spacing every 5 rows
   table.env = "table*" # 2 column tables
   ) %>%
-kable_styling(
-  latex_options = c("repeat_header"), 
-  full_width = FALSE,
-  font_size = 11
-) %>%
-add_header_above(c("Spelling" = 2, "Pronunciation" = 2))
+  kable_styling(
+    latex_options = c("repeat_header"), 
+    full_width = FALSE,
+    font_size = 10
+  ) %>%
+  add_header_above(c("Spelling" = 2, "Pronunciation" = 2)) %>% 
+  footnote(
+    general = c("Experiment 1, 2b, and 3 use the opaque spellings, while Experiment 2a uses the transparent spellings.",
+    "Words are presented according to the CPSAMPA coding convention for simplified IPA characters."),
+    general_title = "Note."
+  ) %>% 
+  pack_rows("Training Words", 1, 30) %>% 
+  pack_rows("Testing Words", 31, 42) %>% 
+  add_indent(c(1:42)) %>% 
+  column_spec(1:4, width = "10em")
 ```

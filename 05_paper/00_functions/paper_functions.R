@@ -158,7 +158,7 @@ kable_coefs <- function(
   headers_above_cols = NULL,
   format_args = list(decimal.mark = ".", big.mark = ","), 
   digits = 2,
-  font_size = 4.8,
+  font_size = 5,
   bold_rows = TRUE,
   bold_basis = "95% CI",
   output_format = "latex", 
@@ -167,7 +167,7 @@ kable_coefs <- function(
   span_columns = TRUE, 
   long_table = TRUE,
   footnote_as_chunk = FALSE,
-  hold_position = "hold_position"
+  hold_position = "HOLD_position"
 ){
   if(span_columns == TRUE){
     table_env <- "table*" # tables that span 2 columns in jou mode
