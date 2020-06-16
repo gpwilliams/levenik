@@ -16,19 +16,20 @@ word_list_data <- readr::read_csv(
   )
 )
 
-word_list_spelling <- word_list_data %>% 
+word_list_reading <- word_list_data %>% 
   select(
     dialect_contrastive_response = contrastive_pronunciation, 
     target = `non-contrastive_pronunciation`) %>% 
   mutate(task = "R")
 
-word_list_reading <- word_list_data %>% 
+# get relevant spelling for orthography
+word_list_spelling <- word_list_data %>% 
   select(target = contains(orthography)) %>% 
   mutate(task = "W")
 
 keydict <- full_join(
-  word_list_spelling, 
   word_list_reading, 
+  word_list_spelling, 
   by = c("target", "task")
   ) %>% 
   mutate(key_target = target)
