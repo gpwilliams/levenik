@@ -8,4 +8,6 @@ Please see the metadata file for a description of the files and folders in this 
 
 This work is licensed under [CC-By Attribution 4.0 International](https://creativecommons.org/licenses/by/4.0/legalcode).
 
+Note that Bayesian models are saved in full only via the [OSF repository](https://osf.io/5mtdj/). Please check the metadata file for further information on these models.
+
 <b id="f1">1</b> Why Levenik? In the lab we called our made-up language Levenik for brevity, referring to the names of the language creators; G**le**nn, **Ve**ra, and **Nik**olay. [↩](#a1)

@@ -1,6 +1,8 @@
 # Metadata
 
-Note that due to excessive file sizes associated with storing Bayesian analyses in lists (and subsequently in .RData files), the outputs of Bayesian data analyses are not hosted on GitHub. The folder structure is there to allow for these analyses to be conducted again to reproduce our results. Otherwise, please refer to the compressed version of the Bayesian analyses (in 03_analysis/02_main-analyses/04_output/06_all-results_compressed/).
+Note that due to excessive file sizes associated with storing Bayesian analyses in lists (and subsequently in .RData files), the outputs of Bayesian data analyses are not hosted on GitHub. Instead these can be found via the [OSF repository](https://osf.io/5mtdj/) in the folder **bayesian_analyses** with each model for each experiment saved under the appropriate subfolder. The Bayesian models will be produced when running the analysis code in R, and summaries of the models (i.e. with a reduced file size) are otherwise saved in in 03_analysis/04_output/04_all-results-compressed/all-results_compressed.RData.
+
+The folder structure is there to allow for these analyses to be conducted again to reproduce our results. Otherwise, please refer to the compressed version of the Bayesian analyses (in 03_analysis/02_main-analyses/04_output/06_all-results_compressed/).
 
 *Note that Experiments 1, 2a, 2b, and 3 in the paper are labelled Experiments 0, 1, 2, and 3 in the raw data and code.*
 
