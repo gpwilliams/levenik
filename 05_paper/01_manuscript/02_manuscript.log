@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.17)  23 JUN 2020 21:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.21 (TeX Live 2020) (preloaded format=pdflatex 2020.4.17)  13 JUL 2020 10:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1072,10 +1072,7 @@ sting_plot_reading.png>] [27 </Users/glennwilliams/Dropbox/GitHub/levenik/04_fi
 gures/output/experiment-3_testing_plot_spelling.png>] [28
 
 
-]
-Underfull \vbox (badness 1215) has occurred while \output is active []
-
-[29]
+] [29]
 Underfull \vbox (badness 1215) has occurred while \output is active []
 
 [30] [31] [32] [33] [34] [35
@@ -1088,7 +1085,7 @@ ript_PNG/1.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/1.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/1.png  used on input line 1334.
+ls/images/script/script_PNG/1.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/2.png, id=728, 205.568pt x 205.568pt>
@@ -1097,7 +1094,7 @@ ript_PNG/2.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/2.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/2.png  used on input line 1334.
+ls/images/script/script_PNG/2.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/3.png, id=729, 205.568pt x 205.568pt>
@@ -1106,7 +1103,7 @@ ript_PNG/3.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/3.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/3.png  used on input line 1334.
+ls/images/script/script_PNG/3.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/4.png, id=730, 205.568pt x 205.568pt>
@@ -1115,7 +1112,7 @@ ript_PNG/4.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/4.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/4.png  used on input line 1334.
+ls/images/script/script_PNG/4.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/5.png, id=731, 205.568pt x 205.568pt>
@@ -1124,7 +1121,7 @@ ript_PNG/5.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/5.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/5.png  used on input line 1334.
+ls/images/script/script_PNG/5.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/6.png, id=732, 205.568pt x 205.568pt>
@@ -1133,7 +1130,7 @@ ript_PNG/6.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/6.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/6.png  used on input line 1334.
+ls/images/script/script_PNG/6.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/7.png, id=733, 205.568pt x 205.568pt>
@@ -1142,7 +1139,7 @@ ript_PNG/7.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/7.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/7.png  used on input line 1334.
+ls/images/script/script_PNG/7.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/8.png, id=734, 205.568pt x 205.568pt>
@@ -1151,7 +1148,7 @@ ript_PNG/8.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/8.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/8.png  used on input line 1334.
+ls/images/script/script_PNG/8.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/9.png, id=735, 205.568pt x 205.568pt>
@@ -1160,7 +1157,7 @@ ript_PNG/9.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/9.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/9.png  used on input line 1334.
+ls/images/script/script_PNG/9.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/10.png, id=736, 205.568pt x 205.568pt>
@@ -1169,7 +1166,7 @@ ript_PNG/10.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/10.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/10.png  used on input line 1334.
+ls/images/script/script_PNG/10.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/11.png, id=737, 205.568pt x 205.568pt>
@@ -1178,7 +1175,7 @@ ript_PNG/11.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/11.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/11.png  used on input line 1334.
+ls/images/script/script_PNG/11.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/12.png, id=738, 205.568pt x 205.568pt>
@@ -1187,7 +1184,7 @@ ript_PNG/12.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/12.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/12.png  used on input line 1334.
+ls/images/script/script_PNG/12.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/13.png, id=739, 205.568pt x 205.568pt>
@@ -1196,7 +1193,7 @@ ript_PNG/13.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/13.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/13.png  used on input line 1334.
+ls/images/script/script_PNG/13.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/14.png, id=740, 205.568pt x 205.568pt>
@@ -1205,7 +1202,7 @@ ript_PNG/14.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/14.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/14.png  used on input line 1334.
+ls/images/script/script_PNG/14.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_
 PNG/15.png, id=741, 205.568pt x 205.568pt>
@@ -1214,7 +1211,7 @@ ript_PNG/15.png Graphic file (type png)
 <use /Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scr
 ipt_PNG/15.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/01_materia
-ls/images/script/script_PNG/15.png  used on input line 1334.
+ls/images/script/script_PNG/15.png  used on input line 1332.
 (pdftex.def)             Requested size: 50.15599pt x 50.15599pt.
 [36
 
@@ -1238,7 +1235,7 @@ ennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/script_PNG/14.png
 > </Users/glennwilliams/Dropbox/GitHub/levenik/01_materials/images/script/scrip
 t_PNG/15.png>]
 LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 1
-357.
+355.
 (/Users/glennwilliams/Library/TinyTeX/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 ) [37
@@ -1256,17 +1253,17 @@ alysis/output/plots/combined_mean_proportions.png Graphic file (type png)
 lysis/output/plots/combined_mean_proportions.png>
 Package pdftex.def Info: /Users/glennwilliams/Dropbox/GitHub/levenik/03_analysi
 s/05_exploratory-analysis/output/plots/combined_mean_proportions.png  used on i
-nput line 1510.
+nput line 1508.
 (pdftex.def)             Requested size: 401.23558pt x 468.10818pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1518.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1516.
 [40
 
  </Users/glennwilliams/Dropbox/GitHub/levenik/03_analysis/05_exploratory-analys
 is/output/plots/combined_mean_proportions.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1518.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1516.
 (./02_manuscript.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1518.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1518.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1516.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1516.
 
 Package rerunfilecheck Info: File `02_manuscript.out' has not changed.
 (rerunfilecheck)             Checksum: 5358865129B1119E5DFA2895158AF714;6974.
@@ -1290,7 +1287,7 @@ exmf-dist/fonts/type1/urw/times/utmbi8a.pfb></Users/glennwilliams/Library/TinyT
 eX/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></Users/glennwilliams/Library/Ti
 nyTeX/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></Users/glennwilliams/Librar
 y/TinyTeX/texmf-dist/fonts/type1/public/tipa/xipa10.pfb>
-Output written on 02_manuscript.pdf (40 pages, 3256911 bytes).
+Output written on 02_manuscript.pdf (40 pages, 3256899 bytes).
 PDF statistics:
  896 PDF objects out of 1000 (max. 8388607)
  781 compressed objects within 8 object streams
