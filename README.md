@@ -1,6 +1,6 @@
 # Williams, G. P., Panayotov, N., & Kempe, V. (2020). How Does Dialect Exposure Affect Learning to Read and Spell? An Artificial Orthography Study. *Journal of Experimental Psychology: General.*<sup id="1">[1](#f1)</sup>
 
-This repository contains the data and code necessary to reproduce the analyses described in Williams, Panayotov, & Kempe (2020).*Journal of Experimental Psychology: General.* [*Literacy Learning in Situations of Dialect Exposure using the Artificial Literacy Learning Paradigm*](https://psyarxiv.com/b8zn6/). 
+This repository contains the data and code necessary to reproduce the analyses described in Williams, Panayotov, & Kempe (2020). [*How Does Dialect Exposure Affect Learning to Read and Spell? An Artificial Orthography Study.*](https://psyarxiv.com/b8zn6/) *Journal of Experimental Psychology: General.*. 
 
 This repository, including all pre-registrations and deviations from registrations, is hosted on the [OSF](https://osf.io/5mtdj/). The [source code for the experiments](https://github.com/gpwilliams/language-learning-experiment) is hosted on GitHub.
 
