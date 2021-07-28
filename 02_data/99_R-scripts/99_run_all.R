@@ -21,7 +21,8 @@ sourced_files <- c(
   "05_participant_filtering.R",
   "06_list_counts.R",
   "07_participant_performance_plots.R",
-  "08_cross_coding_checks.R"
+  "08_cross_coding_checks.R",
+  "09_make_data_to_csv.R"
 )
 
 # define experiments
@@ -32,9 +33,9 @@ for (i in seq_along(all_experiments)) {
   experiments <- all_experiments[i]
   
   folder <- case_when(
-    all_experiments[i] == "ex_0" ~ "01_study-zero",
-    all_experiments[i] == "ex_1_2" ~ "02_study-one-and-two",
-    all_experiments[i] == "ex_3" ~ "03_study-three"
+    experiments == "ex_0" ~ "01_study-zero",
+    experiments == "ex_1_2" ~ "02_study-one-and-two",
+    experiments == "ex_3" ~ "03_study-three"
   )
 
   # run all files in order
